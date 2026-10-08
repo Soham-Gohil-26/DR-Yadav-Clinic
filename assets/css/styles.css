@@ -1597,6 +1597,12 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
+@media (min-width: 1024px) {
+  .max-w-7xl {
+    max-width: 100% !important;
+  }
+}
+
 @media (max-width: 767px) {
   .case-study-controls {
     flex-direction: column !important;
