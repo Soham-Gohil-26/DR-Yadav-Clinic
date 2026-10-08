@@ -110,18 +110,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const pillarData = {
     p1: {
       tag: 'Pillar I • Root Cause Homeopathy',
-      title: 'Constitutional Root Cause Analysis',
-      text: "Unlike superficial suppressive treatments, constitutional homeopathy evaluates your unique genetic profile, immune health, stress triggers, and metabolic history. We prescribe individualized natural German remedies that stimulate your body's self-healing mechanisms from within.",
+      title: 'Understand The Cause',
+      text: "We look at your health history, symptoms, daily routine and personal goals before suggesting a care plan made for you.",
       list: [
-        '100% natural, non-toxic remedies safe for all ages',
-        'Permanent remission without drug dependence',
-        'Addresses internal hormonal and immune imbalances'
+        'A plan based on your symptoms and health history',
+        'Clear guidance for your next steps',
+        'Support for long-term health and wellbeing'
       ]
     },
     p2: {
       tag: 'Pillar II • Follicular Stimulating Care',
-      title: 'Follicular PRP & Hair Regrowth',
-      text: 'Our specialized PRP hair restoration protocol extracts potent growth factors from your blood to revitalize dormant hair follicles. Combined with homeopathic cellular nourishment, patients experience rapid scalp density improvement.',
+      title: 'Support Healthier Hair',
+      text: 'Our hair plans may include scalp care, PRP and other suitable treatments to support stronger, healthier-looking hair.',
       list: [
         'Stimulates weak & dormant hair roots naturally',
         'Improves scalp blood circulation and hair shaft thickness',
@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     p3: {
       tag: 'Pillar III • Cosmetic Dermatology',
-      title: 'Non-Invasive Medical Aesthetic Glow',
-      text: 'Achieve radiant, smooth, and youthful skin texture through advanced aesthetic procedures. We specialize in anti-aging collagen restoration, clinical acne scar remodeling, and hyperpigmentation clearing.',
+      title: 'Refresh Your Skin',
+      text: 'Choose from suitable skin treatments for acne, scars, pigmentation, uneven texture and signs of ageing.',
       list: [
         'Dermatology-grade aesthetic protocols tailored to your skin type',
         'Targeted dark spot, scar, and pigmentation reduction',
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     p4: {
       tag: 'Pillar IV • Endocrine & Metabolic Wellness',
-      title: 'Female Endocrine & PCOS Balance',
-      text: 'PCOS, thyroid dysfunction, and hormonal flare-ups require delicate constitutional balance rather than synthetic hormone pills. Our targeted homeopathic protocols regulate menstrual cycles and relieve hormonal acne and weight gain.',
+      title: 'Support Hormonal Wellness',
+      text: 'We provide personalized guidance for PCOS, thyroid concerns, menstrual symptoms and related changes in weight or skin.',
       list: [
         'Natural endocrine regulation without side effects',
         'Helps restore regular menstrual cycles & ovulation',
@@ -199,20 +199,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const quizRecommendations = {
     hair: {
-      title: 'Constitutional Homeopathy + Follicular PRP Therapy',
-      text: 'Dr. Poonam & Dr. Rahul Yadav recommend starting with natural German homeopathic doses to halt root scalp shedding, paired with 3-4 sessions of PRP hair rejuvenation for rapid density recovery.'
+      title: 'Hair And Scalp Care Plan',
+      text: 'Dr. Poonam and Dr. Rahul Yadav can suggest a personalized plan that may include homeopathy, scalp care and PRP based on your needs.'
     },
     acne: {
-      title: 'Hormonal Detox Homeopathy + Clinical Scar Remodeling',
-      text: 'Recommended protocol focuses on cleansing internal blood toxins and regulating sebum production using constitutional remedies, combined with medical skin brightening care.'
+      title: 'Acne And Scar Care Plan',
+      text: 'Your plan may combine homeopathic care with suitable skin treatments to manage breakouts, marks and scars.'
     },
     pigmentation: {
-      title: 'Melanin Regulation Homeopathy + Aesthetic Brightening',
-      text: 'Targeted homeopathic remedies desensitize hyperactive melanocytes internally while aesthetic facial treatments lighten surface dark spots and sun damage.'
+      title: 'Pigmentation Care Plan',
+      text: 'Your plan may include homeopathic guidance and skin treatments to improve dark spots, uneven tone and sun damage.'
     },
     pcos: {
-      title: 'Endocrine Balancing Homeopathy + Lifestyle Protocol',
-      text: 'Constitutional therapy designed to balance ovarian hormones, normalize menstrual cycles, and eliminate hormonal acne & facial hair growth naturally.'
+      title: 'PCOS And Hormonal Wellness Plan',
+      text: 'Your plan may include homeopathic care, lifestyle guidance and treatment for symptoms such as irregular periods or hormonal acne.'
     }
   };
 
@@ -323,19 +323,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const caseTitle = document.getElementById('caseTitle');
   const caseMeta = document.getElementById('caseMeta');
   const caseDescription = document.getElementById('caseDescription');
-  const baBeforeImg = document.getElementById('baBeforeImg');
-  const baAfterImg = document.getElementById('baAfterImg');
   const sideBySideBeforeImg = document.getElementById('sideBySideBeforeImg');
   const sideBySideAfterImg = document.getElementById('sideBySideAfterImg');
   
   const metric1 = document.getElementById('metric1');
   const metric2 = document.getElementById('metric2');
   const metric3 = document.getElementById('metric3');
-
-  const baViewModeSlider = document.getElementById('baViewModeSlider');
-  const baViewModeSideBySide = document.getElementById('baViewModeSideBySide');
-  const baSliderContainer = document.getElementById('baSliderContainer');
-  const baSideBySideContainer = document.getElementById('baSideBySideContainer');
 
   const caseData = {
     hair: {
@@ -345,22 +338,22 @@ document.addEventListener('DOMContentLoaded', () => {
       meta: 'Patient: 32 Year Old Male | Duration: 4 Months Homeopathy + Scalp PRP',
       beforeImg: 'assets/images/ba/hair-before.png',
       afterImg: 'assets/images/ba/hair-after.png',
-      m1: 'Halted in 6 Wks',
-      m2: '+45% Density',
-      m3: 'Zero Side Effects',
-      desc: '<strong>Clinical Outcome:</strong> Significant thickening of hair follicles along the crown area, complete halt of active shedding within 6 weeks, and visible new hair density achieved with zero side effects.'
+      m1: 'Less Shedding',
+      m2: 'More Fullness',
+      m3: 'Personalized Care',
+      desc: '<strong>Patient update:</strong> The patient saw less shedding and improved hair density after following a personalized care plan.'
     },
     acne: {
       category: 'Skin Care',
       num: 'Case #02',
       title: 'Severe Hormonal Acne Clearance',
-      meta: 'Patient: 24 Year Old Female | Duration: 3 Months Constitutional Remedy',
+      meta: 'Patient: 24-year-old female | Care period: 3 months',
       beforeImg: 'assets/images/ba/acne-before.png',
       afterImg: 'assets/images/ba/acne-after.png',
-      m1: '100% Cleared',
-      m2: '85% Scar Reduction',
-      m3: 'Non-Comedogenic',
-      desc: '<strong>Clinical Outcome:</strong> Elimination of deep cystic breakouts on cheeks and jawline. Post-inflammatory pigmentation lightened by 85% with zero scarring.'
+      m1: 'Fewer Breakouts',
+      m2: 'Smoother Appearance',
+      m3: 'Personalized Care',
+      desc: '<strong>Patient update:</strong> Fewer deep breakouts and a more even-looking skin tone were reported during care.'
     },
     melasma: {
       category: 'Aesthetic Dermatology',
@@ -371,8 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
       afterImg: 'assets/images/ba/melasma-after.png',
       m1: 'Sun Patches Faded',
       m2: 'Even Tone Restored',
-      m3: 'Melanin Regulated',
-      desc: '<strong>Clinical Outcome:</strong> Deep brown sun patches on cheeks and forehead successfully faded. Even skin tone and radiant natural glow restored.'
+      m3: 'Personalized Care',
+      desc: '<strong>Patient update:</strong> Dark patches appeared lighter and the skin tone looked more even after treatment.'
     },
     eczema: {
       category: 'Chronic Homeopathy',
@@ -381,10 +374,10 @@ document.addEventListener('DOMContentLoaded', () => {
       meta: 'Patient: 45 Year Old Male | Duration: 2 Months Anti-Allergic Therapy',
       beforeImg: 'assets/images/ba/eczema-before.png',
       afterImg: 'assets/images/ba/eczema-after.png',
-      m1: 'Itching Relief 48h',
-      m2: 'Redness Cleared',
-      m3: 'Steroid-Free Cured',
-      desc: '<strong>Clinical Outcome:</strong> Complete resolution of intense redness, flaking, and skin itching on arms and neck with constitutional German homeopathy.'
+      m1: 'Less Itching',
+      m2: 'Less Redness',
+      m3: 'Personalized Care',
+      desc: '<strong>Patient update:</strong> Redness, flaking and itching reduced during a personalized homeopathic care plan.'
     }
   };
 
@@ -424,10 +417,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (metric2) metric2.textContent = data.m2;
     if (metric3) metric3.textContent = data.m3;
 
-    // Update Slider Images
-    if (baBeforeImg) baBeforeImg.style.backgroundImage = `url('${data.afterImg}')`;
-    if (baAfterImg) baAfterImg.style.backgroundImage = `url('${data.beforeImg}')`;
-
     // Update Side-by-Side Images
     if (sideBySideBeforeImg) sideBySideBeforeImg.style.backgroundImage = `url('${data.beforeImg}')`;
     if (sideBySideAfterImg) sideBySideAfterImg.style.backgroundImage = `url('${data.afterImg}')`;
@@ -440,81 +429,6 @@ document.addEventListener('DOMContentLoaded', () => {
   thumbCards.forEach(card => {
     card.addEventListener('click', () => switchCaseStudy(card.getAttribute('data-case')));
   });
-
-  // View Mode Toggle (Slider vs Side-by-Side)
-  if (baViewModeSlider && baViewModeSideBySide && baSliderContainer && baSideBySideContainer) {
-    baViewModeSlider.addEventListener('click', () => {
-      baViewModeSlider.classList.add('bg-white', 'text-medical-navy', 'shadow-sm');
-      baViewModeSlider.classList.remove('text-stone-500');
-
-      baViewModeSideBySide.classList.remove('bg-white', 'text-medical-navy', 'shadow-sm');
-      baViewModeSideBySide.classList.add('text-stone-500');
-
-      baSliderContainer.classList.remove('hidden');
-      baSideBySideContainer.classList.add('hidden');
-    });
-
-    baViewModeSideBySide.addEventListener('click', () => {
-      baViewModeSideBySide.classList.add('bg-white', 'text-medical-navy', 'shadow-sm');
-      baViewModeSideBySide.classList.remove('text-stone-500');
-
-      baViewModeSlider.classList.remove('bg-white', 'text-medical-navy', 'shadow-sm');
-      baViewModeSlider.classList.add('text-stone-500');
-
-      baSideBySideContainer.classList.remove('hidden');
-      baSliderContainer.classList.add('hidden');
-    });
-  }
-
-  // Drag slider calculation
-  const baContainer = document.querySelector('.ba-view-container');
-  const baAfter = document.querySelector('.ba-after');
-  const baHandle = document.querySelector('.ba-slider-handle');
-
-  if (baContainer && baAfter && baHandle) {
-    let isDragging = false;
-
-    const updateSlider = (x) => {
-      const rect = baContainer.getBoundingClientRect();
-      let position = ((x - rect.left) / rect.width) * 100;
-      if (position < 0) position = 0;
-      if (position > 100) position = 100;
-
-      baAfter.style.width = `${position}%`;
-      baHandle.style.left = `${position}%`;
-      baHandle.setAttribute('aria-valuenow', Math.round(position));
-    };
-
-    const stopDragging = () => {
-      isDragging = false;
-    };
-
-    baHandle.addEventListener('pointerdown', (event) => {
-      isDragging = true;
-      baHandle.setPointerCapture(event.pointerId);
-      updateSlider(event.clientX);
-    });
-    baHandle.addEventListener('pointermove', (event) => {
-      if (isDragging) updateSlider(event.clientX);
-    });
-    baHandle.addEventListener('pointerup', stopDragging);
-    baHandle.addEventListener('pointercancel', stopDragging);
-    baHandle.addEventListener('keydown', (event) => {
-      const current = Number(baHandle.getAttribute('aria-valuenow')) || 50;
-      let next = current;
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowDown') next -= 5;
-      if (event.key === 'ArrowRight' || event.key === 'ArrowUp') next += 5;
-      if (event.key === 'Home') next = 0;
-      if (event.key === 'End') next = 100;
-      if (next !== current) {
-        event.preventDefault();
-        const rect = baContainer.getBoundingClientRect();
-        updateSlider(rect.left + (rect.width * next / 100));
-      }
-    });
-
-    updateSlider(baContainer.getBoundingClientRect().left + baContainer.getBoundingClientRect().width / 2);
-  }
 
   /* -------------------------------------------------------------------------
    * 7. Slide-Over Quick Appointment Drawer Modal

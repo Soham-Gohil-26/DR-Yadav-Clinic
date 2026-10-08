@@ -96,6 +96,137 @@ body {
   z-index: 1;
 }
 
+/* Editorial Orbit Hero (Landing Page Style) */
+.page2-hero {
+  min-height: min(850px, 92vh);
+}
+
+.page2-hero .hero-orbit {
+  transform: translateY(15px);
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .page2-hero {
+    min-height: auto;
+  }
+  .page2-hero .hero-orbit {
+    transform: scale(0.82);
+    margin: -20px -50px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero Orbit Animations:
+   1. Circle layers moving outwards and fading
+   2. Three small boxes moving in a circle (staying upright)
+   -------------------------------------------------------------------------- */
+.orbit-ripple-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 53%;
+  height: 53%;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1.5px solid rgba(212, 160, 23, 0.55);
+  box-shadow: 0 0 16px rgba(212, 160, 23, 0.12), inset 0 0 12px rgba(212, 160, 23, 0.05);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: orbit-ripple-outward 7s cubic-bezier(0.15, 0.75, 0.35, 1) infinite;
+  z-index: 2;
+}
+
+.orbit-ripple-layer.ripple-1 { animation-delay: 0s; }
+.orbit-ripple-layer.ripple-2 { animation-delay: 1.75s; }
+.orbit-ripple-layer.ripple-3 { animation-delay: 3.5s; }
+.orbit-ripple-layer.ripple-4 { animation-delay: 5.25s; }
+
+@keyframes orbit-ripple-outward {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.85;
+    border-color: rgba(212, 160, 23, 0.65);
+  }
+  30% {
+    opacity: 0.6;
+    border-color: rgba(212, 160, 23, 0.45);
+  }
+  65% {
+    opacity: 0.25;
+    border-color: rgba(212, 160, 23, 0.25);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.92);
+    opacity: 0;
+    border-color: rgba(212, 160, 23, 0);
+  }
+}
+
+/* Orbit circular path for the three small boxes */
+.orbit-boxes-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: center center;
+  animation: orbit-rotate-track 30s linear infinite;
+  z-index: 20;
+}
+
+.orbit-box-item {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.orbit-box-inner {
+  transform-origin: center center;
+  animation: orbit-counter-rotate 30s linear infinite;
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+  user-select: none;
+}
+
+.orbit-box-inner:hover {
+  transform: scale(1.05);
+  border-color: rgba(212, 160, 23, 0.7);
+  box-shadow: 0 10px 24px rgba(212, 160, 23, 0.22);
+}
+
+.care-orbit {
+  animation: orbit-rotate-track 60s linear infinite;
+  transform-origin: center center;
+}
+
+.care-orbit-reverse {
+  animation: orbit-counter-rotate 50s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes orbit-rotate-track {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.hero-orbit:hover .orbit-boxes-track,
+.hero-orbit:hover .orbit-box-inner,
+.hero-orbit:hover .care-orbit,
+.hero-orbit:hover .care-orbit-reverse {
+  animation-play-state: paused;
+}
+
 /* Scroll Progress Bar at top of viewport (Golden Gradient) */
 #scrollProgressBar {
   position: fixed;
@@ -575,66 +706,7 @@ input:focus, select:focus, textarea:focus {
   opacity: 1;
 }
 
-/* Before & After Interactive Gallery & Slider */
-.ba-view-container {
-  position: relative;
-  width: 100%;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-md);
-  user-select: none;
-  touch-action: pan-y;
-}
-
-.ba-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: background-image 400ms ease;
-}
-
-.ba-before {
-  z-index: 1;
-}
-
-.ba-after {
-  z-index: 2;
-  width: 50%;
-  border-right: 2px solid #FFFFFF;
-  box-shadow: 4px 0 20px rgba(0,0,0,0.2);
-}
-
-.ba-slider-handle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #FFFFFF;
-  border: 2.5px solid var(--color-primary);
-  box-shadow: 0 4px 16px rgba(212, 160, 23, 0.35);
-  z-index: 30;
-  cursor: ew-resize;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow 250ms ease;
-  color: var(--color-navy);
-  touch-action: none;
-}
-
-.ba-slider-handle:hover {
-  box-shadow: 0 6px 20px rgba(212, 160, 23, 0.45);
-}
-
+/* Before & After Case Gallery */
 .ba-thumb-card {
   transition: transform 280ms var(--ease-out-smooth),
               border-color 280ms ease;
@@ -990,6 +1062,347 @@ input:focus, select:focus, textarea:focus {
   line-height: 1.55;
 }
 
+/* Appointment booking redesign */
+.appointment-section {
+  overflow: hidden;
+  padding: 7rem 0;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(212, 160, 23, 0.12), transparent 30rem),
+    #f5f0e5;
+}
+
+.appointment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: stretch;
+  gap: clamp(2rem, 5vw, 6rem);
+}
+
+.appointment-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 43rem;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  color: #fdfcf7;
+  background:
+    linear-gradient(150deg, rgba(28, 24, 19, 0.96), rgba(52, 39, 21, 0.98)),
+    url("../images/clinic-logo.png") center / 12rem no-repeat;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(28, 24, 19, 0.16);
+}
+
+.appointment-kicker,
+.appointment-form-step {
+  display: block;
+  color: #e7b52b;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.appointment-intro h2 {
+  max-width: 25rem;
+  margin: 1rem 0 1.25rem;
+  color: #fdfcf7;
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+.appointment-intro-copy {
+  max-width: 28rem;
+  color: rgba(253, 252, 247, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.appointment-trust-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 3rem 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(253, 252, 247, 0.18);
+  border-bottom: 1px solid rgba(253, 252, 247, 0.18);
+}
+
+.appointment-trust-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.appointment-trust-row strong {
+  color: #fdfcf7;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.appointment-trust-row span {
+  color: rgba(253, 252, 247, 0.52);
+  font-size: 0.62rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.appointment-intro .appointment-contact-strip {
+  padding: 0 0 1.4rem;
+  border-top: 0;
+  border-bottom: 1px solid rgba(253, 252, 247, 0.18);
+}
+
+.appointment-intro .appointment-contact-label {
+  color: #e7b52b;
+}
+
+.appointment-intro .appointment-phone {
+  color: #fdfcf7;
+  font-size: 0.76rem;
+}
+
+.appointment-intro .appointment-phone:hover {
+  color: #e7b52b;
+}
+
+.appointment-intro .appointment-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 0;
+}
+
+.appointment-intro .appointment-detail {
+  grid-template-columns: 2.2rem 1fr;
+}
+
+.appointment-intro .appointment-detail-number {
+  color: #e7b52b;
+  font-size: 0.9rem;
+}
+
+.appointment-intro .appointment-detail h3 {
+  color: #fdfcf7;
+  font-size: 0.82rem;
+}
+
+.appointment-intro .appointment-detail p {
+  color: rgba(253, 252, 247, 0.56);
+}
+
+.appointment-form-shell {
+  align-self: center;
+  padding: clamp(1.5rem, 4vw, 3.25rem);
+  background: #fdfcf7;
+  border: 1px solid rgba(181, 129, 16, 0.2);
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(28, 24, 19, 0.1);
+}
+
+.appointment-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.appointment-form-heading h3 {
+  margin-top: 0.45rem;
+  color: var(--color-navy);
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.appointment-form-icon {
+  display: grid;
+  width: 2.8rem;
+  height: 2.8rem;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--color-primary-dark);
+  background: #fff6d9;
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  border-radius: 0.85rem;
+}
+
+.appointment-form-note {
+  max-width: 32rem;
+  margin: 0.8rem 0 2rem;
+  color: #756a5a;
+  font-size: 0.82rem;
+}
+
+.appointment-form {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.appointment-field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+}
+
+.appointment-field-grid > div {
+  min-width: 0;
+}
+
+.appointment-field-wide {
+  grid-column: 1 / -1;
+}
+
+.appointment-form label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #544a3d;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.appointment-form label span {
+  color: #b58110;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  color: #1c1813;
+  background: #faf7f0;
+  border: 1px solid #e2d8c6;
+  border-radius: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.appointment-form input,
+.appointment-form select {
+  min-height: 3rem;
+  padding: 0.75rem 0.9rem;
+}
+
+.appointment-form textarea {
+  min-height: 5.5rem;
+  padding: 0.8rem 0.9rem;
+  resize: vertical;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: #a69b8b;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.14);
+}
+
+.appointment-error {
+  margin-top: 0.35rem;
+  color: #be123c;
+  font-size: 0.68rem;
+}
+
+.appointment-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.5rem;
+  padding: 0.9rem 1.2rem;
+  color: #1c1813;
+  background: linear-gradient(135deg, #e8b72c, #d4a017);
+  border: 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 12px 24px rgba(181, 129, 16, 0.2);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.appointment-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(181, 129, 16, 0.28);
+}
+
+.appointment-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: #918574;
+  font-size: 0.68rem;
+}
+
+@media (max-width: 1023px) {
+  .appointment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-intro {
+    min-height: 0;
+  }
+
+  .appointment-form-shell {
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .appointment-section {
+    padding: 4.5rem 0;
+  }
+
+  .appointment-intro {
+    padding: 1.75rem;
+    border-radius: 1.4rem;
+  }
+
+  .appointment-trust-row {
+    margin: 2.2rem 0;
+  }
+
+  .appointment-trust-row strong {
+    font-size: 1.05rem;
+  }
+
+  .appointment-trust-row span {
+    font-size: 0.54rem;
+  }
+
+  .appointment-form-shell {
+    padding: 1.35rem;
+    border-radius: 1.4rem;
+  }
+
+  .appointment-field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-field-wide {
+    grid-column: auto;
+  }
+
+  .appointment-intro .appointment-contact-strip {
+    gap: 1rem;
+  }
+}
+
 .doctor-window-media {
   position: relative;
   height: 26rem;
@@ -1107,6 +1520,46 @@ input:focus, select:focus, textarea:focus {
 }
 
 @media (max-width: 767px) {
+  .editorial-trust-strip {
+    display: none;
+  }
+
+  .page2-hero .hero-copy {
+    display: contents;
+  }
+
+  .page2-hero h1 {
+    order: 1;
+  }
+
+  .page2-hero .hero-copy > p {
+    order: 2;
+  }
+
+  .page2-hero .hero-orbit-aside {
+    order: 3;
+  }
+
+  .page2-hero .hero-cta {
+    order: 4;
+  }
+
+  .page2-hero .hero-stats {
+    order: 5;
+  }
+
+  .page2-hero .hero-orbit {
+    width: 100%;
+    max-width: 460px;
+    margin: -20px auto;
+    transform: scale(0.82);
+    transform-origin: center center;
+  }
+
+  .appointment-intro {
+    display: none;
+  }
+
   .mobile-horizontal-scroller {
     display: flex !important;
     flex-wrap: nowrap;
@@ -1118,13 +1571,29 @@ input:focus, select:focus, textarea:focus {
   }
 
   .treatments-scroller .treatment-card {
-    flex: 0 0 86%;
-    scroll-snap-align: start;
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
   }
 
   .gallery-scroller .gallery-item {
-    flex: 0 0 84%;
-    scroll-snap-align: start;
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+
+  #sideBySideBeforeImg,
+  #sideBySideAfterImg {
+    background-position: center top;
+    background-size: cover;
+    filter: saturate(0.92) contrast(0.98);
+  }
+
+  #gallery .gallery-filter-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1137,6 +1606,72 @@ input:focus, select:focus, textarea:focus {
   .case-study-controls .case-study-btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Google Reviews Vertical Stream (Infinite Moving Line)
+   ========================================================================== */
+.reviews-vertical-viewport {
+  position: relative;
+  height: 640px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.reviews-vertical-track-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: reviews-scroll-up 40s linear infinite;
+  will-change: transform;
+}
+
+.reviews-vertical-track-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: reviews-scroll-up 48s linear infinite;
+  will-change: transform;
+}
+
+.reviews-vertical-viewport:hover .reviews-vertical-track-1,
+.reviews-vertical-viewport:hover .reviews-vertical-track-2,
+.reviews-vertical-viewport.is-paused .reviews-vertical-track-1,
+.reviews-vertical-viewport.is-paused .reviews-vertical-track-2 {
+  animation-play-state: paused;
+}
+
+@keyframes reviews-scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.google-review-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(218, 198, 160, 0.6);
+  border-radius: 1.25rem;
+  padding: 1.35rem 1.5rem;
+  box-shadow: 0 4px 18px rgba(28, 24, 19, 0.05);
+  transition: transform 280ms var(--ease-out-smooth),
+              box-shadow 280ms ease,
+              border-color 280ms ease;
+}
+
+.google-review-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 160, 23, 0.65);
+  box-shadow: 0 12px 32px rgba(212, 160, 23, 0.16);
+}
+
+@media (max-width: 639px) {
+  .reviews-vertical-viewport {
+    height: 520px;
   }
 }
 

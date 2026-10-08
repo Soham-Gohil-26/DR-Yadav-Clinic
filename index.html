@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- SEO Primary Meta Tags -->
-  <title>Yadav's Homeopathy & Aesthetic Clinic | Mira Road | Skin, Hair & Aesthetic Care</title>
-  <meta name="title" content="Yadav's Homeopathy & Aesthetic Clinic | Mira Road | Skin, Hair & Aesthetic Care" />
-  <meta name="description" content="Leading Homeopathy & Aesthetic Clinic in Mira Road. Specialized natural treatments for Hair Fall, Acne, Pigmentation, PCOS, Eczema, Anti-Aging & Cosmetic Procedures by experienced doctors. Book consultation today." />
-  <meta name="keywords" content="Homeopathy clinic Mira Road, Aesthetic clinic Mira Road, Hair fall treatment Mira Road, Skin specialist Mira Road, Acne treatment, Pigmentation, PRP hair growth, Dr. Yadav homeopathy" />
+  <title>Homeopathy &amp; Aesthetic Clinic in Mira Road | Yadav's Clinic</title>
+  <meta name="title" content="Homeopathy &amp; Aesthetic Clinic in Mira Road | Yadav's Clinic" />
+  <meta name="description" content="Yadav's Homeopathy &amp; Aesthetic Clinic in Mira Road offers personalized care for skin, hair, pigmentation, acne, PCOS, hair fall and general wellness. Book a consultation." />
+  <meta name="content-language" content="en-IN" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1C1813" />
+  <link rel="canonical" href="https://yadavclinic.com/" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/clinic-logo.png" />
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yadavclinic.com/" />
-  <meta property="og:title" content="Yadav's Homeopathy & Aesthetic Clinic | Mira Road" />
-  <meta property="og:description" content="Natural Healing & Modern Aesthetic Care in Mira Road. Specialized skin, hair and holistic homeopathy treatments with 15+ years experience." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:site_name" content="Yadav's Homeopathy &amp; Aesthetic Clinic" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="Homeopathy &amp; Aesthetic Clinic in Mira Road | Yadav's Clinic" />
+  <meta property="og:description" content="Personalized skin, hair, aesthetic and homeopathic care in Mira Road." />
+  <meta property="og:image" content="https://yadavclinic.com/assets/images/gallery/clinic-front.jpg" />
+  <meta property="og:image:alt" content="Yadav's Homeopathy &amp; Aesthetic Clinic in Mira Road" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Homeopathy &amp; Aesthetic Clinic in Mira Road | Yadav's Clinic" />
+  <meta name="twitter:description" content="Personalized skin, hair, aesthetic and homeopathic care in Mira Road." />
+  <meta name="twitter:image" content="https://yadavclinic.com/assets/images/gallery/clinic-front.jpg" />
+  <meta name="twitter:image:alt" content="Yadav's Homeopathy &amp; Aesthetic Clinic" />
 
   <!-- Google Fonts: Editorial Serif & Clean Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,43 +100,74 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Yadav's Homeopathy & Aesthetic Clinic",
-    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
-    "@id": "https://yadavclinic.com/#clinic",
-    "url": "https://yadavclinic.com/",
-    "telephone": "+919892688901",
-    "priceRange": "₹₹",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Shop No. 4, B-6, Green Park Society, Near Gokul Village, Shanti Nagar",
-      "addressLocality": "Mira Road East",
-      "addressRegion": "Maharashtra",
-      "postalCode": "401107",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 19.2795334,
-      "longitude": 72.8694316
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "10:00",
-        "closes": "21:00"
+        "@type": "MedicalClinic",
+        "@id": "https://yadavclinic.com/#clinic",
+        "name": "Yadav's Homeopathy & Aesthetic Clinic",
+        "image": "https://yadavclinic.com/assets/images/gallery/clinic-front.jpg",
+        "logo": "https://yadavclinic.com/assets/images/clinic-logo.png",
+        "url": "https://yadavclinic.com/",
+        "telephone": "+919892688901",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop No. 4, B-6, Green Park Society, Near Gokul Village, Shanti Nagar",
+          "addressLocality": "Mira Road East",
+          "addressRegion": "Maharashtra",
+          "postalCode": "401107",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.2795334,
+          "longitude": 72.8694316
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "21:00"
+        }],
+        "medicalSpecialty": ["Homeopathic", "Dermatology", "CosmeticDermatology"],
+        "areaServed": ["Mira Road", "Bhayandar", "Thane", "Mumbai"],
+        "availableService": [
+          {"@type": "MedicalProcedure", "name": "Acne Treatment"},
+          {"@type": "MedicalProcedure", "name": "Hair Fall Treatment"},
+          {"@type": "MedicalProcedure", "name": "Pigmentation Treatment"},
+          {"@type": "MedicalProcedure", "name": "Laser Hair Reduction"},
+          {"@type": "MedicalProcedure", "name": "PRP Hair Treatment"}
+        ],
+        "employee": [
+          {"@type": "Person", "name": "Dr. Poonam Yadav", "jobTitle": "Homeopathy Doctor"},
+          {"@type": "Person", "name": "Dr. Rahul Yadav", "jobTitle": "Aesthetic Care Doctor"}
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://yadavclinic.com/#website",
+        "name": "Yadav's Homeopathy & Aesthetic Clinic",
+        "url": "https://yadavclinic.com/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://yadavclinic.com/#webpage",
+        "name": "Homeopathy & Aesthetic Clinic in Mira Road",
+        "url": "https://yadavclinic.com/",
+        "isPartOf": {"@id": "https://yadavclinic.com/#website"},
+        "about": {"@id": "https://yadavclinic.com/#clinic"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://yadavclinic.com/#faq",
+        "mainEntity": [
+          {"@type": "Question", "name": "Is homeopathy safe?", "acceptedAnswer": {"@type": "Answer", "text": "Your doctor will review your health history, current medicines and needs before recommending a treatment. Always share your complete medical history during your consultation."}},
+          {"@type": "Question", "name": "When will I see changes in my hair?", "acceptedAnswer": {"@type": "Answer", "text": "Results vary from person to person. Your doctor will explain the expected timeline after checking your hair, scalp and treatment needs."}},
+          {"@type": "Question", "name": "Can I combine skin treatments with homeopathy?", "acceptedAnswer": {"@type": "Answer", "text": "Your doctors can guide you on which treatments can be used together safely based on your condition and medical history."}},
+          {"@type": "Question", "name": "Do I need to follow a special diet?", "acceptedAnswer": {"@type": "Answer", "text": "Dietary advice depends on your treatment and health goals. You will receive simple, practical guidance during your consultation."}},
+          {"@type": "Question", "name": "What are the clinic hours?", "acceptedAnswer": {"@type": "Answer", "text": "We are open every day from 10:00 AM to 9:00 PM. Please call +91 91377 05305 or +91 98926 88901 to book a convenient time."}}
+        ]
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "850"
-    },
-    "medicalSpecialty": [
-      "Homeopathic",
-      "Dermatology",
-      "CosmeticDermatology"
     ]
   }
   </script>
@@ -144,7 +187,7 @@
       <!-- Brand Logo -->
       <a href="#home" class="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-amber-500 rounded-xl p-1">
         <div class="w-14 h-14 rounded-xl bg-amber-50/90 flex items-center justify-center transition-transform group-hover:scale-105 shadow-sm border border-amber-200/70 p-1">
-          <img src="assets/images/clinic-logo.png" alt="Yadav's Homeopathy &amp; Aesthetic Clinic Emblem" class="w-full h-full object-contain" />
+          <img src="assets/images/clinic-logo.png" width="512" height="512" alt="Yadav's Homeopathy &amp; Aesthetic Clinic Emblem" class="w-full h-full object-contain" />
         </div>
         <div>
           <span class="font-serif font-bold text-2xl tracking-tight text-medical-navy block leading-none">
@@ -195,7 +238,7 @@
             <i data-lucide="calendar" class="w-4 h-4"></i> Book Instant Appointment
           </button>
           <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic,%20I%20want%20to%20inquire%20about%20a%20treatment." target="_blank" class="mobile-nav-link btn-editorial-outline text-center w-full justify-center inline-flex items-center gap-2 border-amber-300 text-amber-900 bg-amber-50/70 hover:bg-amber-100/70">
-            <img src="assets/images/whatsapp-logo.png" alt="WhatsApp" class="w-4 h-4 object-contain rounded-sm" />
+            <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp" class="w-4 h-4 object-contain rounded-sm" />
             <span>Chat on WhatsApp (+91 98926 88901)</span>
           </a>
           <a href="tel:+919892688901" class="mobile-nav-link btn-editorial-outline text-center w-full justify-center">
@@ -208,103 +251,82 @@
 
 
   <!-- =========================================================================
-       2. EDITORIAL HERO SECTION (Ambient Glow Lighting)
+       2. EDITORIAL HERO SECTION (Care That Looks At The Whole Of You)
        ========================================================================= -->
-  <section id="home" class="grid-surface relative pt-32 pb-20 md:pt-40 md:pb-28 bg-[#FDFCF7] bg-radial-ambient overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
-        
-        <!-- Left Editorial Text Content -->
-        <div class="lg:col-span-7 fade-up">
-          
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal text-medical-navy leading-[1.12] mb-6">
-            Natural Healing. <br />
-            <span class="italic font-light text-[#C69214]">Modern Aesthetic Care.</span>
-          </h1>
-
-          <p class="text-base sm:text-lg text-stone-600 max-w-xl mb-8 leading-relaxed font-sans">
-            Empowering patients to achieve glowing, healthy skin, thicker hair, and holistic hormonal wellness through advanced homeopathy and evidence-based cosmetic dermatology.
-          </p>
-
-          <!-- CTAs -->
-          <div class="flex flex-wrap items-center gap-4 mb-12">
-            <button class="open-drawer-btn btn-editorial-primary">
-              <span>Book Consultation</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-          </div>
-
-          <!-- Minimalist Editorial Stats Bar -->
-          <div class="pt-8 border-t border-amber-900/10 grid grid-cols-3 gap-6">
-            <div>
-              <p class="text-2xl sm:text-3xl font-serif font-bold text-medical-navy counter-val" data-target="10000" data-suffix="+">10,000+</p>
-              <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mt-1">Patients Treated</p>
-            </div>
-            <div class="border-l border-amber-900/10 pl-6">
-              <p class="text-2xl sm:text-3xl font-serif font-bold text-medical-navy flex items-center gap-1.5">
-                <span class="counter-val" data-target="4.9" data-decimals="1">4.9</span>
-                <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
-              </p>
-              <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mt-1">Google Rating</p>
-            </div>
-            <div class="border-l border-amber-900/10 pl-6">
-              <p class="text-2xl sm:text-3xl font-serif font-bold text-medical-navy counter-val" data-target="15" data-suffix="+">15+</p>
-              <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mt-1">Years Clinical Exp.</p>
-            </div>
-          </div>
-
+  <section id="home" class="page2-hero grid-surface relative overflow-hidden bg-radial-ambient pt-32 sm:pt-40">
+    <div class="pointer-events-none absolute inset-x-0 top-[48%] h-px hero-line"></div>
+    <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 pb-12 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8 relative z-10">
+      <div class="hero-copy fade-up lg:col-span-7">
+        <h1 class="max-w-4xl font-serif text-5xl font-normal leading-[1.03] tracking-tight text-medical-navy sm:text-6xl lg:text-7xl xl:text-8xl">Care that looks at <span class="italic font-light text-[#C69214]">the whole of you.</span></h1>
+        <p class="mt-7 max-w-xl text-base leading-relaxed text-stone-600 sm:text-lg">Get personal care for your skin, hair and overall health from experienced doctors in Mira Road.</p>
+        <div class="hero-cta mt-9 flex flex-wrap items-center gap-4">
+          <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn-editorial-primary inline-flex gap-2"><span>Start your consultation</span><i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+          <a href="#about" aria-label="Learn more about the clinic" class="btn-editorial-outline inline-flex gap-2 border-amber-300/80 bg-transparent px-5 py-3 text-sm"><i data-lucide="arrow-down" class="h-4 w-4 text-[#B58110]"></i></a>
         </div>
-
-        <!-- Right Editorial Frame Composition -->
-        <div class="lg:col-span-5 relative fade-left">
-          <div class="relative mx-auto max-w-md lg:max-w-none">
-            
-            <!-- Doctor Frame -->
-            <div class="editorial-frame rounded-3xl border border-amber-900/15 shadow-xl overflow-hidden bg-[#FBF8F1]">
-              <div class="doctor-placeholder h-[460px] sm:h-[500px] flex flex-col items-center justify-center text-center p-8" role="img" aria-label="Yadav Clinic medical team">
-                <div class="w-24 h-24 rounded-full border border-amber-300/70 bg-amber-50/80 text-amber-700 flex items-center justify-center mb-5 shadow-inner">
-                  <i data-lucide="users-round" class="w-11 h-11"></i>
-                </div>
-                <p class="text-xs uppercase tracking-[0.24em] text-amber-700 font-bold">Yadav Clinic</p>
-                <p class="mt-2 text-lg font-serif font-bold text-medical-navy">Expert care, together</p>
-              </div>
-              
-              <div class="absolute inset-0 bg-gradient-to-t from-medical-navy/90 via-medical-navy/20 to-transparent"></div>
-              
-              <div class="absolute bottom-6 left-6 right-6 text-white z-10">
-                <span class="text-[11px] font-bold uppercase tracking-widest text-amber-300 bg-[#29221A]/85 border border-amber-400/30 backdrop-blur-md px-3 py-1 rounded-full inline-block mb-2">Certified Practitioners</span>
-                <h3 class="text-2xl font-serif font-bold text-white">Dr. Poonam Yadav &amp; Dr. Rahul Yadav</h3>
-                <p class="text-xs text-stone-200 font-medium mt-1">B.H.M.S. &amp; B.A.M.S. &middot; Homeopathy, Aesthetics &amp; Family Wellness</p>
-              </div>
-            </div>
-
-            <!-- Single meaningful floating badge: Clinic Hours -->
-            <div class="absolute -top-4 -right-4 sm:-top-5 sm:-right-5 z-20 glass-card p-3.5 rounded-2xl flex items-center gap-3 shadow-lg border border-amber-900/15 hidden sm:flex">
-              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200/50">
-                <i data-lucide="clock" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <p class="text-[10px] text-amber-700 font-bold uppercase tracking-wider flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Open All 7 Days
-                </p>
-                <p class="text-xs font-bold text-medical-navy font-sans">10:00 AM – 9:00 PM</p>
-              </div>
-            </div>
-
-          </div>
+        <div class="hero-stats mt-12 grid max-w-2xl grid-cols-3 border-t border-amber-900/10 pt-7">
+          <div><strong class="block font-serif text-2xl text-medical-navy sm:text-3xl counter-val" data-target="10000" data-suffix="+">10k<span class="text-[#C69214]">+</span></strong><span class="mt-1 block text-[10px] font-bold uppercase tracking-wider text-stone-500">Patients cared for</span></div>
+          <div class="border-l border-amber-900/10 pl-4 sm:pl-6"><strong class="block font-serif text-2xl text-medical-navy sm:text-3xl">4.9<span class="text-[#C69214]">★</span></strong><span class="mt-1 block text-[10px] font-bold uppercase tracking-wider text-stone-500">Google rating</span></div>
+          <div class="border-l border-amber-900/10 pl-4 sm:pl-6"><strong class="block font-serif text-2xl text-medical-navy sm:text-3xl counter-val" data-target="15" data-suffix="+">15<span class="text-[#C69214]">+</span></strong><span class="mt-1 block text-[10px] font-bold uppercase tracking-wider text-stone-500">Years of care</span></div>
         </div>
-
       </div>
+      <aside class="hero-orbit-aside fade-left lg:col-span-5" aria-label="Yadav Clinic care principles">
+        <div class="hero-orbit relative mx-auto aspect-square w-full max-w-[460px]">
+          <!-- Base background circles -->
+          <div class="absolute inset-[8%] rounded-full border border-amber-300/40 bg-[#FBF8F1]/85 shadow-[0_20px_70px_rgba(28,24,19,.08)]"></div>
+          <div class="care-orbit absolute inset-0 rounded-full border border-dashed border-amber-400/50"></div>
+          <div class="care-orbit-reverse absolute inset-[14%] rounded-full border border-amber-200/80"></div>
 
+          <!-- Outward expanding and fading circle layers -->
+          <div class="orbit-ripple-layer ripple-1"></div>
+          <div class="orbit-ripple-layer ripple-2"></div>
+          <div class="orbit-ripple-layer ripple-3"></div>
+          <div class="orbit-ripple-layer ripple-4"></div>
+
+          <!-- Center Promise Card -->
+          <div class="absolute inset-[23%] flex flex-col items-center justify-center rounded-full border border-amber-300/60 bg-[#FDFCF7] p-7 text-center z-10 shadow-lg">
+            <span class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1C1813] text-amber-300 shadow-md"><i data-lucide="heart-pulse" class="h-7 w-7"></i></span>
+            <span class="text-[10px] font-bold uppercase tracking-[.22em] text-[#B58110]">Our care promise</span>
+            <strong class="mt-2 font-serif text-2xl leading-tight text-medical-navy sm:text-3xl">Listen deeply.<br />Treat precisely.</strong>
+          </div>
+
+          <!-- Circular Orbit Track for the Three Small Boxes -->
+          <div class="orbit-boxes-track">
+            <!-- Box 1: Understand -->
+            <div class="orbit-box-item left-0 top-[17%]">
+              <div class="orbit-box-inner flex items-center gap-2 rounded-2xl border border-amber-900/10 bg-[#FDFCF7]/95 px-3 py-2.5 shadow-md">
+                <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-amber-50 text-[#B58110]"><i data-lucide="scan-search" class="h-4 w-4"></i></span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-stone-700">Understand</span>
+              </div>
+            </div>
+
+            <!-- Box 2: Restore -->
+            <div class="orbit-box-item right-[-1%] top-[43%]">
+              <div class="orbit-box-inner flex items-center gap-2 rounded-2xl border border-amber-900/10 bg-[#FDFCF7]/95 px-3 py-2.5 shadow-md">
+                <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-amber-50 text-[#B58110]"><i data-lucide="sparkles" class="h-4 w-4"></i></span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-stone-700">Restore</span>
+              </div>
+            </div>
+
+            <!-- Box 3: Nurture -->
+            <div class="orbit-box-item bottom-[10%] left-[14%]">
+              <div class="orbit-box-inner flex items-center gap-2 rounded-2xl border border-amber-900/10 bg-[#FDFCF7]/95 px-3 py-2.5 shadow-md">
+                <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-amber-50 text-[#B58110]"><i data-lucide="sprout" class="h-4 w-4"></i></span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-stone-700">Nurture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
+    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 pb-8 text-[10px] font-bold uppercase tracking-[.18em] text-stone-500 sm:px-6 lg:px-8 relative z-10"><span class="h-px w-8 bg-amber-400"></span> Skin · Hair · Aesthetic · Wellness</div>
   </section>
+
 
 
   <!-- =========================================================================
        3. EDITORIAL TRUST STRIP
        ========================================================================= -->
-  <section class="py-7 bg-medical-navy text-white relative z-20 border-y border-[#352D23]">
+  <section class="editorial-trust-strip py-7 bg-medical-navy text-white relative z-20 border-y border-[#352D23]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-[#352D23]">
         
@@ -367,7 +389,7 @@
         <div>
           <span class="section-num">MEET YOUR DOCTORS</span>
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-            Led By Expert Doctors In Mira Road
+            Meet Our Experienced Doctors
           </h2>
         </div>
       </div>
@@ -387,7 +409,7 @@
             <span class="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full mb-3 border border-amber-200/80">B.H.M.S.</span>
             <h3 class="text-3xl font-serif font-bold text-medical-navy">Dr. Poonam Yadav</h3>
             <p class="text-xs text-[#C69214] font-bold tracking-wider uppercase mb-4 mt-1">Homeopathy &amp; Aesthetic Consultant &middot; Cosmetologist &middot; Trichologist &middot; Laser</p>
-            <p class="text-stone-600 text-sm leading-relaxed mb-5">Specialized in constitutional homeopathy, aesthetic skin care, hair restoration, laser treatments, and PRP therapies.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-5">She provides personalized homeopathy, skin and hair care, laser treatments, and PRP services.</p>
             <div class="flex items-center gap-2 text-xs font-semibold text-stone-700 pt-4 border-t border-amber-900/10">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500"></i>
               <span>10,000+ Successful Patient Consultations</span>
@@ -408,7 +430,7 @@
             <span class="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full mb-3 border border-amber-200/80">B.A.M.S.</span>
             <h3 class="text-3xl font-serif font-bold text-medical-navy">Dr. Rahul Yadav</h3>
             <p class="text-xs text-[#C69214] font-bold tracking-wider uppercase mb-4 mt-1">Family Wellness Physician &middot; General &amp; Holistic Medicine</p>
-            <p class="text-stone-600 text-sm leading-relaxed mb-5">Expert in family wellness, chronic systemic conditions including joint pain, diabetes, thyroid, PCOS, kidney stones, and comprehensive patient care.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-5">He supports family health and long-term conditions such as joint pain, diabetes, thyroid concerns, PCOS and kidney stones.</p>
             <div class="flex items-center gap-2 text-xs font-semibold text-stone-700 pt-4 border-t border-amber-900/10">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500"></i>
               <span>Specialist in Family Wellness &amp; Chronic Disease Management</span>
@@ -426,9 +448,9 @@
       
       <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 pb-6 border-b border-amber-900/10 fade-up">
         <div>
-          <span class="section-num">SPECIALIZED CARE</span>
+          <span class="section-num">OUR SERVICES</span>
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-            Our Clinical &amp; Aesthetic Treatments
+            Treatments For Skin, Hair &amp; Overall Wellness
           </h2>
         </div>
       </div>
@@ -436,10 +458,11 @@
       <!-- Category Filter Pills -->
       <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-12 fade-up">
         <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-medical-navy text-amber-300 border border-amber-400/40 shadow-sm" data-filter="all">All Treatments <span class="ml-1 opacity-80">(12)</span></button>
-        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="hair">Hair Care <span class="ml-1 text-stone-400">(3)</span></button>
+        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="hair">Hair &amp; Trichology <span class="ml-1 text-stone-400">(3)</span></button>
         <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="skin">Skin Care <span class="ml-1 text-stone-400">(4)</span></button>
-        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="aesthetic">Aesthetic &amp; Laser <span class="ml-1 text-stone-400">(2)</span></button>
-        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="wellness">Weight &amp; Wellness <span class="ml-1 text-stone-400">(3)</span></button>
+        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="aesthetic">Laser &amp; Aesthetics <span class="ml-1 text-stone-400">(2)</span></button>
+        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="wellness">Weight &amp; Wellness <span class="ml-1 text-stone-400">(2)</span></button>
+        <button class="treatment-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="clinical">General Homeopathy <span class="ml-1 text-stone-400">(2)</span></button>
       </div>
 
       <!-- Numbered Editorial Treatments Grid -->
@@ -455,7 +478,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Hair Fall &amp; Alopecia Areata</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Constitutional homeopathic remedies for hair thinning, alopecia areata, dandruff, and scalp health. Includes Hair Dandruff Control &amp; Hair Fall Control.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Support for hair fall, thinning, alopecia, dandruff and other scalp concerns.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -473,7 +496,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Platelet Rich Plasma (PRP)</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">PRP Hair therapy stops hair fall &amp; stimulates regrowth. PRP Face therapy rejuvenates your skin naturally using your own platelet-rich plasma.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">PRP uses your own blood platelets to support hair growth and refresh tired-looking skin.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -491,7 +514,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Hair GFC &amp; Mesotherapy</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Advanced hair care with Hair GFC (Growth Factor Concentrate), Hair Mesotherapy &amp; Hair Regrowth Treatment for comprehensive follicle stimulation.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">GFC, mesotherapy and regrowth treatments designed to support healthier hair follicles.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -509,7 +532,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Acne &amp; Scar Treatment</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Eliminate stubborn hormonal acne, cystic breakouts &amp; scars. Advanced options include Chemical Peel, Microneedling &amp; Scar Treatment.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Improve acne, breakouts and scars with suitable options such as peels, microneedling and scar care.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -527,7 +550,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Pigmentation &amp; Melasma</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Treatment for hyperpigmentation, melasma, dark patches. Also includes Mole Removal, Wart Removal, Tattoo Removal &amp; Xanthelasma Treatment.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Care for uneven skin tone, melasma, dark patches, moles, warts, tattoos and xanthelasma.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -545,7 +568,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Eczema, Psoriasis &amp; Skin Diseases</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Sustained relief from eczema, psoriasis, ringworm, fungal infections &amp; chronic skin allergies through homeopathic root-cause healing.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Personalized support for eczema, psoriasis, fungal infections, ringworm and skin allergies.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -553,7 +576,7 @@
           </button>
         </div>
 
-        <!-- Card 7: Skin Conditions (Acne & Scar, Hyperpigmentation) -->
+        <!-- Card 7: Anti-ageing -->
         <div class="treatment-card editorial-card p-8 rounded-3xl hover:border-amber-400/60 transition-all hover:shadow-xl group flex flex-col justify-between border border-amber-900/10" data-category="skin">
           <div>
             <div class="flex items-center justify-between mb-6">
@@ -562,8 +585,8 @@
                 <i data-lucide="shield" class="w-5 h-5"></i>
               </div>
             </div>
-            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Anti-Ageing Treatment</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Non-surgical skin tightening, fine-line reduction &amp; collagen boosting. Restore youthful glowing skin with our advanced aesthetic procedures.</p>
+            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Anti-Ageing &amp; Skin Rejuvenation</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Refresh your skin with non-surgical care for fine lines, firmness, texture and a healthy glow.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -581,7 +604,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Advanced Laser Treatments</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Laser Resurfacing, Laser Toning, Q-Switch Laser, Carbon Laser Peel &amp; Laser Hair Reduction. Painless, quick, and safe for lasting results.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Laser resurfacing, toning, Q-Switch, carbon peel and hair reduction for common skin and hair concerns.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -599,7 +622,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Hydrafacial &amp; Permanent Makeup</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Hydrafacial gives instant glow &mdash; completely safe &amp; customizable. Permanent Makeup is smudge-free, waterproof and long-lasting.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Hydrafacial deeply cleans and refreshes the skin. Permanent makeup offers convenient, long-lasting definition.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -616,8 +639,8 @@
                 <i data-lucide="activity" class="w-5 h-5"></i>
               </div>
             </div>
-            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">PCOS, Thyroid &amp; General Wellness</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Holistic treatment for PCOS/PCOD, thyroid disorders, diabetes, migraine, joint pain, allergies, kidney stones &amp; stress through advanced homeopathy.</p>
+            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Weight Loss &amp; Hormonal Wellness</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Practical support for weight loss, nutrition, lifestyle changes, PCOS, thyroid and menstrual concerns.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -626,16 +649,16 @@
         </div>
 
         <!-- Card 11: Weight Loss & Wellness Programs -->
-        <div class="treatment-card editorial-card p-8 rounded-3xl hover:border-amber-400/60 transition-all hover:shadow-xl group flex flex-col justify-between border border-amber-900/10" data-category="wellness">
+        <div class="treatment-card editorial-card p-8 rounded-3xl hover:border-amber-400/60 transition-all hover:shadow-xl group flex flex-col justify-between border border-amber-900/10" data-category="clinical">
           <div>
             <div class="flex items-center justify-between mb-6">
               <span class="text-xs font-serif italic text-amber-700/60">11</span>
               <div class="w-10 h-10 rounded-xl bg-[#FBF3DE] text-amber-600 flex items-center justify-center group-hover:scale-105 transition-transform border border-amber-200/50">
-                <i data-lucide="scale" class="w-5 h-5"></i>
+                <i data-lucide="heart-pulse" class="w-5 h-5"></i>
               </div>
             </div>
-            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">Weight Loss &amp; Wellness Programs</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Lose your weight naturally. Includes Weight Loss Programs, Inch Loss Treatment, Detox &amp; Cleansing, Diet &amp; Nutrition Counseling, and Lifestyle Counseling.</p>
+            <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">General Homeopathy &amp; Chronic Care</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Homeopathic care for joint and back pain, allergies, migraine, acidity, urinary concerns, diabetes, blood pressure, cholesterol and child health.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -644,7 +667,7 @@
         </div>
 
         <!-- Card 12: General Homeopathy -->
-        <div class="treatment-card editorial-card p-8 rounded-3xl hover:border-amber-400/60 transition-all hover:shadow-xl group flex flex-col justify-between border border-amber-900/10" data-category="wellness">
+        <div class="treatment-card editorial-card p-8 rounded-3xl hover:border-amber-400/60 transition-all hover:shadow-xl group flex flex-col justify-between border border-amber-900/10" data-category="clinical">
           <div>
             <div class="flex items-center justify-between mb-6">
               <span class="text-xs font-serif italic text-amber-700/60">12</span>
@@ -653,7 +676,7 @@
               </div>
             </div>
             <h3 class="text-xl font-serif font-bold text-medical-navy mb-3">General Homeopathic Consultation</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6">Homeopathic treatment for joint pain, muscle pain, back pain, arthritis, cervical spondylosis, constipation, insomnia, infertility &amp; child health.</p>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">A general consultation for ongoing health concerns, family wellness and personalized homeopathic care.</p>
           </div>
           <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-4 border-t border-amber-900/10">
             <span>Learn More &amp; Book</span>
@@ -675,14 +698,14 @@
       <!-- Section Header -->
       <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 pb-6 border-b border-amber-900/10 fade-up">
         <div>
-          <span class="section-num">CLINICAL RESULTS</span>
+          <span class="section-num">PATIENT RESULTS</span>
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-            Interactive Case Study Gallery
+            See Our Treatment Results
           </h2>
         </div>
       </div>
 
-      <!-- Controls Header: Category Tabs & View Mode Switcher -->
+      <!-- Controls Header: Category Tabs -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 fade-up">
         <!-- Interactive Case Study Tabs -->
         <div class="case-study-controls flex flex-col md:flex-row items-stretch md:items-center gap-2.5 w-full md:w-auto">
@@ -700,17 +723,6 @@
           </button>
         </div>
 
-        <!-- View Mode Toggle (Slider vs Side-by-Side) -->
-        <div class="flex items-center bg-stone-200/50 p-1 rounded-full border border-amber-900/10 shrink-0">
-          <button id="baViewModeSlider" class="px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-white text-medical-navy shadow-sm flex items-center gap-1.5">
-            <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5 text-amber-600"></i>
-            <span>Slider Mode</span>
-          </button>
-          <button id="baViewModeSideBySide" class="px-4 py-1.5 rounded-full text-xs font-bold transition-all text-stone-500 hover:text-medical-navy flex items-center gap-1.5">
-            <i data-lucide="columns-2" class="w-3.5 h-3.5"></i>
-            <span>Side-by-Side</span>
-          </button>
-        </div>
       </div>
 
       <!-- Main Case Spotlight Frame -->
@@ -729,36 +741,8 @@
 
         </div>
 
-        <!-- MODE A: Locked Aspect Ratio Split Drag Slider Container -->
-        <div id="baSliderContainer" class="ba-view-container relative w-full aspect-[4/3] sm:aspect-[16/9] max-h-[500px] rounded-2xl overflow-hidden border border-amber-900/15 shadow-md select-none">
-          
-          <!-- After Image (Underneath) -->
-          <div id="baBeforeImg" class="ba-image ba-before absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('assets/images/ba/hair-after.png');">
-            <span class="absolute top-4 right-4 bg-amber-600/90 text-white text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full z-10 shadow-sm backdrop-blur-md">
-              AFTER TREATMENT
-            </span>
-          </div>
-
-          <!-- Before Image (Overlay clipped on right) -->
-          <div id="baAfterImg" class="ba-image ba-after absolute inset-0 w-[50%] h-full bg-cover bg-center border-r-2 border-white shadow-[4px_0_15px_rgba(0,0,0,0.2)] z-10" style="background-image: url('assets/images/ba/hair-before.png');">
-            <span class="absolute top-4 left-4 bg-medical-navy/90 text-white text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full z-10 shadow-sm backdrop-blur-md">
-              BEFORE TREATMENT
-            </span>
-          </div>
-
-          <!-- Interactive Drag Handle -->
-          <div class="ba-slider-handle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white border-2 border-amber-500 shadow-xl z-20 cursor-ew-resize flex items-center justify-center transition-transform hover:scale-110 active:scale-95" role="slider" tabindex="0" aria-label="Drag slider to compare before and after images" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-            <i data-lucide="chevrons-left-right" class="w-5 h-5 text-amber-600"></i>
-          </div>
-
-          <!-- Bottom Drag Instruction Badge -->
-          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-medical-navy/85 backdrop-blur-md text-amber-200 text-[10px] font-semibold tracking-wider px-4 py-1 rounded-full z-20 pointer-events-none hidden sm:block border border-amber-400/20">
-            &larr; Drag handle to compare &rarr;
-          </div>
-        </div>
-
-        <!-- MODE B: Side-by-Side Dual Card View Container (Hidden initially) -->
-        <div id="baSideBySideContainer" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+        <!-- Side-by-Side Comparison -->
+        <div id="baSideBySideContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           <!-- Before Card -->
           <div class="relative aspect-[4/3] sm:aspect-[16/9] max-h-[500px] rounded-2xl overflow-hidden border border-amber-900/15 shadow-md">
             <div id="sideBySideBeforeImg" class="w-full h-full bg-cover bg-center" style="background-image: url('assets/images/ba/hair-before.png');"></div>
@@ -800,7 +784,7 @@
           <div>
             <h4 class="font-serif font-bold text-sm text-medical-navy mb-1">Detailed Clinical Assessment</h4>
             <p id="caseDescription" class="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
-              <strong>Clinical Outcome:</strong> Significant thickening of hair follicles along the crown area, complete halt of active shedding within 6 weeks, and visible new hair density achieved with zero side effects.
+              <strong>Patient update:</strong> The patient saw less shedding and improved hair density after following a personalized care plan.
             </p>
           </div>
         </div>
@@ -831,9 +815,6 @@
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
             Inside Our Mira Road Practice
           </h2>
-          <p class="text-stone-600 mt-2 text-sm max-w-2xl font-sans leading-relaxed">
-            Real photographs of our practice at Green Park Society, Mira Road (East). Explore our clinic entrance, official illuminated emblem, comprehensive treatment directory, and extensive clinical diagnostic wall boards.
-          </p>
         </div>
         <div class="mt-4 lg:mt-0 flex items-center gap-2 text-xs text-amber-800 font-semibold bg-amber-50/80 px-4 py-2 rounded-full border border-amber-200/80 shrink-0">
           <i data-lucide="camera" class="w-4 h-4 text-amber-600"></i>
@@ -841,24 +822,8 @@
         </div>
       </div>
 
-      <!-- Gallery Filter Controls -->
-      <div class="flex flex-wrap items-center gap-2.5 mb-10 fade-up" role="tablist" aria-label="Gallery category filters">
-        <button class="gallery-filter-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-medical-navy text-amber-300 border border-amber-400/40 shadow-sm" data-filter="all">
-          <i data-lucide="layout-grid" class="w-3.5 h-3.5 inline-block mr-1"></i> All Photographs (5)
-        </button>
-        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="clinic">
-          <i data-lucide="building-2" class="w-3.5 h-3.5 inline-block mr-1"></i> Clinic &amp; Emblem (2)
-        </button>
-        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="services">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5 inline-block mr-1"></i> Treatments Standee (1)
-        </button>
-        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-amber-50/70 border border-amber-900/15" data-filter="boards">
-          <i data-lucide="clipboard-list" class="w-3.5 h-3.5 inline-block mr-1"></i> Clinical Wall Boards (2)
-        </button>
-      </div>
-
       <!-- Gallery Grid -->
-      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mobile-horizontal-scroller gallery-scroller">
+      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mobile-horizontal-scroller gallery-scroller mt-10">
         
         <!-- Gallery Card 1: Clinic Front & Marquee -->
         <div class="gallery-item col-span-1 overflow-hidden rounded-3xl relative cursor-pointer group shadow-sm border border-amber-900/15 focus-visible:ring-2 focus-visible:ring-amber-500 bg-[#FAF7F0]" 
@@ -870,7 +835,7 @@
              data-badge="Clinic Exterior"
              data-desc="Modern street-front clinical facility at Shop No. 4, Green Park Society, Mira Road (East). Featuring our illuminated bilingual signboard, consultation timings (10:00 AM – 9:00 PM), verified physician credentials, and welcoming patient reception entrance.">
           <div class="relative w-full h-80 sm:h-96 md:h-[420px] overflow-hidden bg-stone-900">
-            <img src="assets/images/gallery/clinic-front.jpg" alt="Dr. Yadav's Clinic Front Entrance and Signboard on Mira Road" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+            <img src="assets/images/gallery/clinic-front.jpg" width="768" height="1024" alt="Dr. Yadav's Clinic Front Entrance and Signboard on Mira Road" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
               <span class="px-3 py-1 bg-medical-navy/90 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider rounded-full border border-amber-400/30 shadow-md">
@@ -907,7 +872,7 @@
              data-badge="Brand Identity"
              data-desc="Our registered 3D illuminated clinic emblem installed at the premises. Uniting the medical Caduceus staff and serpents with a feminine aesthetic profile on a golden medical cross, symbolizing integrative classical homeopathy and medical aesthetics.">
           <div class="relative w-full h-80 sm:h-96 md:h-[420px] overflow-hidden bg-gradient-to-b from-[#1C1813] via-[#241D17] to-[#16120E] flex items-center justify-center p-4">
-            <img src="assets/images/gallery/clinic-emblem.png" alt="Dr. Yadav's Official Wall-Mounted Clinic Emblem" loading="lazy" decoding="async" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-[0_10px_20px_rgba(212,160,23,0.25)]" />
+            <img src="assets/images/gallery/clinic-emblem.png" width="768" height="1024" alt="Dr. Yadav's Official Wall-Mounted Clinic Emblem" loading="lazy" decoding="async" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-[0_10px_20px_rgba(212,160,23,0.25)]" />
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
               <span class="px-3 py-1 bg-medical-navy/90 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider rounded-full border border-amber-400/30 shadow-md">
@@ -944,7 +909,7 @@
              data-badge="Treatment Directory"
              data-desc="Official in-clinic procedure directory for Dr. Poonam Yadav: Platelet Rich Plasma (PRP) Face rejuvenation, PRP Hair Restoration, Medical Hydrafacial, Permanent Makeup, Painless Laser Hair Reduction, and Natural Weight Loss therapies.">
           <div class="relative w-full h-80 sm:h-96 md:h-[420px] overflow-hidden bg-stone-900">
-            <img src="assets/images/gallery/services-standee.jpg" alt="Aesthetic, Trichology & Laser Directory Standee at Dr. Yadav's Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+            <img src="assets/images/gallery/services-standee.jpg" width="768" height="1024" alt="Aesthetic, Trichology & Laser Directory Standee at Dr. Yadav's Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
               <span class="px-3 py-1 bg-medical-navy/90 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider rounded-full border border-amber-400/30 shadow-md">
@@ -981,7 +946,7 @@
              data-badge="Clinical Documentation"
              data-desc="In-clinic diagnostic board documenting verified treatment outcomes for Acne &amp; Scars, Alopecia Areata, Eczema, Psoriasis, Melasma, Fungal Infections, alongside Advanced Laser treatments (Resurfacing, Toning, Q-Switch, Carbon Peel) and Hair Care (PRP, GFC, Regrowth).">
           <div class="relative w-full h-80 sm:h-96 md:h-[420px] overflow-hidden bg-stone-900">
-            <img src="assets/images/gallery/clinical-treatments-board-1.jpg" alt="Clinical Skin Conditions and Hair Care Board at Yadav Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+            <img src="assets/images/gallery/clinical-treatments-board-1.jpg" width="768" height="1024" alt="Clinical Skin Conditions and Hair Care Board at Yadav Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
               <span class="px-3 py-1 bg-medical-navy/90 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider rounded-full border border-amber-400/30 shadow-md">
@@ -1018,7 +983,7 @@
              data-badge="Aesthetics &amp; Wellness"
              data-desc="Wall-mounted clinical case documentation showcasing Before &amp; After results for Acne Treatment, Anti-Ageing, Chemical Peels, Tattoo Removal, Microneedling, Mole &amp; Wart Removal, Scar Revision, Xanthelasma, and medical Weight Loss &amp; Lifestyle wellness counseling.">
           <div class="relative w-full h-80 sm:h-96 md:h-[420px] overflow-hidden bg-stone-900">
-            <img src="assets/images/gallery/clinical-treatments-board-2.jpg" alt="Aesthetic Skin Care and Weight Loss Wellness Board at Yadav's Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+            <img src="assets/images/gallery/clinical-treatments-board-2.jpg" width="1024" height="768" alt="Aesthetic Skin Care and Weight Loss Wellness Board at Yadav's Clinic" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
               <span class="px-3 py-1 bg-medical-navy/90 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider rounded-full border border-amber-400/30 shadow-md">
@@ -1092,10 +1057,10 @@
       <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
         <span class="section-num">FREQUENTLY ASKED QUESTIONS</span>
         <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-          Transparent Answers
+          Clear Answers To Common Questions
         </h2>
         <p class="text-stone-600 mt-3 text-sm leading-relaxed font-sans">
-          Find answers regarding homeopathic remedies, clinical consultation procedures, and aesthetic therapies.
+          Learn more about consultations, homeopathy, skin care and hair treatments.
         </p>
       </div>
 
@@ -1104,55 +1069,55 @@
         <!-- FAQ 1 -->
         <div class="faq-item editorial-card rounded-2xl p-6 transition-all border border-amber-900/10 bg-white">
           <button class="faq-question w-full flex items-center justify-between gap-4 text-left font-serif font-bold text-medical-navy text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg" aria-expanded="false" aria-controls="faq-ans-1">
-            <span>Are homeopathic treatments safe with zero side effects?</span>
+            <span>Is homeopathy safe?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-600 transition-transform shrink-0"></i>
           </button>
           <div id="faq-ans-1" class="faq-answer text-stone-600 text-sm leading-relaxed mt-3 pt-3 border-t border-amber-900/10 font-sans">
-            Yes, 100%. Homeopathic remedies are prepared from ultra-diluted natural substances and are entirely free from toxic chemicals, heavy metals, or steroids. They can be safely prescribed for toddlers, pregnant women, and elderly patients without risk of organ stress.
+            Your doctor will review your health history, current medicines and needs before recommending a treatment. Always share your complete medical history during your consultation.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="faq-item editorial-card rounded-2xl p-6 transition-all border border-amber-900/10 bg-white">
           <button class="faq-question w-full flex items-center justify-between gap-4 text-left font-serif font-bold text-medical-navy text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg" aria-expanded="false" aria-controls="faq-ans-2">
-            <span>How long does hair fall treatment take to show results?</span>
+            <span>When will I see changes in my hair?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-600 transition-transform shrink-0"></i>
           </button>
           <div id="faq-ans-2" class="faq-answer text-stone-600 text-sm leading-relaxed mt-3 pt-3 border-t border-amber-900/10 font-sans">
-            Most patients notice a significant reduction in active hair shedding within 4 to 6 weeks. New follicular growth and increased hair density are typically visible between 3 to 5 months when homeopathy is paired with scalp diagnostic care or PRP.
+            Results vary from person to person. Your doctor will explain the expected timeline after checking your hair, scalp and treatment needs.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="faq-item editorial-card rounded-2xl p-6 transition-all border border-amber-900/10 bg-white">
           <button class="faq-question w-full flex items-center justify-between gap-4 text-left font-serif font-bold text-medical-navy text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg" aria-expanded="false" aria-controls="faq-ans-3">
-            <span>Can aesthetic treatments be combined with homeopathy?</span>
+            <span>Can I combine skin treatments with homeopathy?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-600 transition-transform shrink-0"></i>
           </button>
           <div id="faq-ans-3" class="faq-answer text-stone-600 text-sm leading-relaxed mt-3 pt-3 border-t border-amber-900/10 font-sans">
-            Absolutely! In fact, combining internal constitutional homeopathy (to cure internal hormonal/metabolic triggers) with safe external clinical aesthetic care yields faster and more radiant skin and hair results.
+            Your doctors can guide you on which treatments can be used together safely based on your condition and medical history.
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="faq-item editorial-card rounded-2xl p-6 transition-all border border-amber-900/10 bg-white">
           <button class="faq-question w-full flex items-center justify-between gap-4 text-left font-serif font-bold text-medical-navy text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg" aria-expanded="false" aria-controls="faq-ans-4">
-            <span>Do I need to follow strict diet restrictions during treatment?</span>
+            <span>Do I need to follow a special diet?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-600 transition-transform shrink-0"></i>
           </button>
           <div id="faq-ans-4" class="faq-answer text-stone-600 text-sm leading-relaxed mt-3 pt-3 border-t border-amber-900/10 font-sans">
-            Only minimal restrictions apply depending on your specific case. Generally, avoiding strong coffee or raw onion immediately 15 minutes before taking doses is advised. Doctor Yadav provides a clear, simple guideline during consultation.
+            Dietary advice depends on your treatment and health goals. You will receive simple, practical guidance during your consultation.
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="faq-item editorial-card rounded-2xl p-6 transition-all border border-amber-900/10 bg-white">
           <button class="faq-question w-full flex items-center justify-between gap-4 text-left font-serif font-bold text-medical-navy text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg" aria-expanded="false" aria-controls="faq-ans-5">
-            <span>What are the clinic timings in Mira Road?</span>
+            <span>What are the clinic hours?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-600 transition-transform shrink-0"></i>
           </button>
           <div id="faq-ans-5" class="faq-answer text-stone-600 text-sm leading-relaxed mt-3 pt-3 border-t border-amber-900/10 font-sans">
-            Our clinic is open all 7 days from 10:00 AM to 9:00 PM. Prior booking is recommended to minimize waiting time. You can call us at +91 91377 05305 or +91 98926 88901 to confirm your slot.
+            We are open every day from 10:00 AM to 9:00 PM. Please call +91 91377 05305 or +91 98926 88901 to book a convenient time.
           </div>
         </div>
 
@@ -1165,27 +1130,32 @@
   <!-- =========================================================================
        13. SECTION 10 / APPOINTMENT BOOKING SECTION
        ========================================================================= -->
-  <section id="appointment" class="grid-surface py-24 bg-[#F7F3E9] relative border-t border-amber-900/10">
+  <section id="appointment" class="appointment-section relative border-t border-amber-900/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-        
-        <!-- Booking Copy -->
-        <div class="lg:col-span-5 fade-right">
-          <span class="section-num">SCHEDULE CONSULTATION</span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2 mb-6">
-            Book Your Consultation With Our Specialists
-          </h2>
+      <div class="appointment-layout">
+        <div class="appointment-intro fade-right">
+          <div>
+            <span class="appointment-kicker">SCHEDULE YOUR VISIT</span>
+            <h2>Care that begins with a conversation.</h2>
+            <p class="appointment-intro-copy">Tell us what you are looking for and our team will help you find the right next step for your skin, hair or overall wellbeing.</p>
+          </div>
+
+          <div class="appointment-trust-row">
+            <div><strong>15+</strong><span>Years of care</span></div>
+            <div><strong>4.9/5</strong><span>Patient rating</span></div>
+            <div><strong>7 days</strong><span>Open every week</span></div>
+          </div>
+
           <div class="appointment-contact-strip">
             <div>
-              <p class="appointment-contact-label">Call the clinic directly</p>
+              <p class="appointment-contact-label">Prefer to speak with us?</p>
               <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
                 <a href="tel:+919892688901" class="appointment-phone">+91 98926 88901</a>
                 <a href="tel:+919137705305" class="appointment-phone">+91 91377 05305</a>
               </div>
             </div>
             <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic,%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="appointment-whatsapp">
-              <img src="assets/images/whatsapp-logo.png" alt="WhatsApp" />
+              <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp" />
               WhatsApp
             </a>
           </div>
@@ -1193,115 +1163,94 @@
           <div class="appointment-details" aria-label="Consultation process">
             <div class="appointment-detail">
               <span class="appointment-detail-number">01</span>
-              <div>
-                <h3>Understand your concern</h3>
-                <p>We listen carefully and review your health history.</p>
-              </div>
+              <div><h3>Share your concern</h3><p>We listen carefully before recommending a treatment path.</p></div>
             </div>
             <div class="appointment-detail">
               <span class="appointment-detail-number">02</span>
-              <div>
-                <h3>Build your care plan</h3>
-                <p>Your consultation is tailored to your goals and needs.</p>
-              </div>
+              <div><h3>Meet your specialist</h3><p>Your consultation is shaped around your history and goals.</p></div>
             </div>
             <div class="appointment-detail">
               <span class="appointment-detail-number">03</span>
-              <div>
-                <h3>Continue with confidence</h3>
-                <p>Leave with clear next steps and ongoing guidance.</p>
-              </div>
+              <div><h3>Leave with clarity</h3><p>Get clear next steps and thoughtful ongoing guidance.</p></div>
             </div>
           </div>
         </div>
 
-        <!-- Booking Form Card -->
-        <div class="lg:col-span-7 fade-up">
-          <div class="editorial-card p-8 sm:p-10 rounded-3xl shadow-xl bg-[#FDFCF7] border border-amber-900/10">
-            <h3 class="text-2xl font-serif font-bold text-medical-navy mb-6">Request An Appointment</h3>
-            
-            <form id="appointmentForm" class="space-y-5">
-              
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label for="formName" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Full Name *</label>
-                  <input type="text" id="formName" required placeholder="e.g. Ananya Roy" class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans" />
-                </div>
+        <div class="appointment-form-shell fade-up">
+          <div class="appointment-form-heading">
+            <div>
+              <span class="appointment-form-step">STEP 1 OF 1</span>
+              <h3>Request an appointment</h3>
+            </div>
+            <span class="appointment-form-icon"><i data-lucide="calendar-days" class="w-5 h-5"></i></span>
+          </div>
+          <p class="appointment-form-note">Complete the form and we will confirm your consultation on WhatsApp.</p>
 
+          <form id="appointmentForm" class="appointment-form">
+            <div class="appointment-field-grid">
                 <div>
-                  <label for="formPhone" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Phone Number *</label>
-                  <input type="tel" id="formPhone" required pattern="[0-9]{10}" placeholder="e.g. 9876543210" class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans" />
-                  <p id="phoneError" class="hidden text-[11px] text-rose-500 mt-1">Please enter a valid 10-digit mobile number.</p>
+                  <label for="formName">Full name <span>*</span></label>
+                  <input type="text" id="formName" required placeholder="e.g. Ananya Roy" />
                 </div>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label for="formEmail" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Email Address</label>
-                  <input type="email" id="formEmail" placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans" />
+                  <label for="formPhone">Phone number <span>*</span></label>
+                  <input type="tel" id="formPhone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" />
+                  <p id="phoneError" class="hidden appointment-error">Please enter a valid 10-digit mobile number.</p>
                 </div>
-
                 <div>
-                  <label for="formTreatment" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Select Treatment *</label>
-                  <select id="formTreatment" required class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans">
+                  <label for="formEmail">Email address</label>
+                  <input type="email" id="formEmail" placeholder="name@example.com" />
+                </div>
+                <div>
+                  <label for="formTreatment">What can we help with? <span>*</span></label>
+                  <select id="formTreatment" required>
                     <option value="">Choose primary concern...</option>
-                    <optgroup label="Hair Care">
-                      <option value="Hair Fall & Alopecia">Hair Fall &amp; Alopecia Areata</option>
-                      <option value="PRP Hair Therapy">PRP Hair Therapy</option>
-                      <option value="Hair GFC & Mesotherapy">Hair GFC &amp; Mesotherapy</option>
-                      <option value="Hair Dandruff & Scalp">Hair Dandruff &amp; Scalp Care</option>
-                    </optgroup>
-                    <optgroup label="Skin Care">
-                      <option value="Acne & Scars">Acne &amp; Scar Treatment</option>
-                      <option value="Pigmentation & Melasma">Pigmentation &amp; Melasma</option>
-                      <option value="Eczema & Psoriasis">Eczema &amp; Psoriasis</option>
-                      <option value="Mole / Wart / Tattoo Removal">Mole / Wart / Tattoo Removal</option>
-                    </optgroup>
-                    <optgroup label="Aesthetic &amp; Laser">
+                    <optgroup label="Skin &amp; Aesthetics">
+                      <option value="Acne & Scar Treatment">Acne &amp; Scar Treatment</option>
+                      <option value="Pigmentation & Melasma">Pigmentation, Melasma &amp; Hyperpigmentation</option>
+                      <option value="Anti-Ageing Treatment">Anti-Ageing &amp; Skin Rejuvenation</option>
                       <option value="Hydrafacial">Hydrafacial</option>
-                      <option value="PRP Face">PRP Face Rejuvenation</option>
-                      <option value="Anti-Ageing Treatment">Anti-Ageing Treatment</option>
-                      <option value="Laser Hair Reduction">Laser Hair Reduction</option>
-                      <option value="Laser Toning / Resurfacing">Laser Toning / Resurfacing</option>
                       <option value="Chemical Peel">Chemical Peel</option>
-                      <option value="Permanent Makeup">Permanent Makeup</option>
+                      <option value="Mole / Wart / Tattoo Removal">Mole, Wart &amp; Tattoo Removal</option>
                     </optgroup>
-                    <optgroup label="Weight &amp; Wellness">
-                      <option value="Weight Loss Program">Weight Loss Program</option>
-                      <option value="PCOS / Thyroid Balance">PCOS / Thyroid Balance</option>
-                      <option value="Diet & Nutrition Counseling">Diet &amp; Nutrition Counseling</option>
+                    <optgroup label="Laser Treatments">
+                      <option value="Laser Hair Reduction">Laser Hair Reduction</option>
+                      <option value="Laser Resurfacing / Toning">Laser Resurfacing &amp; Toning</option>
+                      <option value="Q-Switch / Carbon Laser Peel">Q-Switch &amp; Carbon Laser Peel</option>
                     </optgroup>
-                    <optgroup label="General Homeopathy">
-                      <option value="General Homeopathic Consultation">General Consultation</option>
-                      <option value="Joint / Back Pain">Joint / Back / Muscle Pain</option>
-                      <option value="Diabetes & BP">Diabetes &amp; BP Management</option>
-                      <option value="Child Health">Child Health</option>
+                    <optgroup label="Hair &amp; Trichology">
+                      <option value="Hair Fall / Hair Thinning">Hair Fall &amp; Hair Thinning</option>
+                      <option value="PRP Hair">PRP Hair</option>
+                      <option value="Hair GFC / Mesotherapy">Hair GFC &amp; Mesotherapy</option>
+                      <option value="Alopecia Areata">Alopecia Areata</option>
+                    </optgroup>
+                    <optgroup label="Wellness &amp; Homeopathy">
+                      <option value="Weight Loss & Lifestyle Care">Weight Loss &amp; Lifestyle Care</option>
+                      <option value="PCOS / Thyroid Balance">PCOS, Thyroid &amp; Hormonal Balance</option>
+                      <option value="Joint Pain / Arthritis">Joint Pain, Arthritis &amp; Back Pain</option>
+                      <option value="Skin Disease / Allergy">Eczema, Psoriasis &amp; Allergies</option>
+                      <option value="General Homeopathy">General Homeopathy Consultation</option>
                     </optgroup>
                   </select>
                 </div>
-              </div>
-
-              <div>
-                <label for="formDate" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Preferred Date</label>
-                <input type="date" id="formDate" class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans" />
-              </div>
-
-              <div>
-                <label for="formMessage" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Brief Symptoms / Notes</label>
-                <textarea id="formMessage" rows="3" placeholder="Tell us briefly about your condition..." class="w-full px-4 py-3 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 transition-all font-sans"></textarea>
-              </div>
-
-              <button type="submit" class="btn-editorial-primary w-full py-4 text-sm uppercase tracking-wider justify-center mt-2 shadow-lg hover:shadow-xl">
+                <div>
+                  <label for="formDate">Preferred date</label>
+                  <input type="date" id="formDate" />
+                </div>
+                <div class="appointment-field-wide">
+                  <label for="formMessage">Anything you would like us to know?</label>
+                  <textarea id="formMessage" rows="3" placeholder="Briefly share your symptoms or questions..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="appointment-submit">
                 <i data-lucide="check-circle" class="w-4 h-4"></i>
-                <span>Confirm Consultation Slot</span>
-              </button>
-
-            </form>
+                <span>Request my consultation</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </button>
+            <p class="appointment-privacy"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Your information is private and only used to arrange your visit.</p>
+          </form>
           </div>
         </div>
-
-      </div>
-
     </div>
   </section>
 
@@ -1315,7 +1264,7 @@
         <div>
           <span class="section-num">LOCATION & CONTACT</span>
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-            Visit Our Practice
+          Visit Our Clinic
           </h2>
         </div>
       </div>
@@ -1360,7 +1309,7 @@
               <p class="text-sm text-stone-600 font-sans">Mobile: <a href="tel:+919892688901" class="font-bold text-[#B58110] hover:text-[#D4A017] hover:underline">+91 98926 88901</a></p>
               <p class="text-sm text-stone-600 font-sans mt-1">Clinic: <a href="tel:+919137705305" class="font-bold text-[#B58110] hover:text-[#D4A017] hover:underline">+91 91377 05305</a></p>
               <p class="text-sm text-stone-600 font-sans mt-1">
-                WhatsApp: <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic,%20I%20want%20to%20inquire%20about%20a%20treatment." target="_blank" class="font-bold text-amber-800 hover:text-amber-900 hover:underline inline-flex items-center gap-1.5"><img src="assets/images/whatsapp-logo.png" alt="WhatsApp" class="w-4 h-4 object-contain rounded-sm" /> Chat on WhatsApp</a>
+                WhatsApp: <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic,%20I%20want%20to%20inquire%20about%20a%20treatment." target="_blank" class="font-bold text-amber-800 hover:text-amber-900 hover:underline inline-flex items-center gap-1.5">                <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp" class="w-4 h-4 object-contain rounded-sm" /> Chat on WhatsApp</a>
               </p>
             </div>
           </div>
@@ -1412,7 +1361,7 @@
 
   <!-- Floating WhatsApp Action Button with Tooltip -->
   <a href="https://wa.me/919892688901?text=Hello%20Yadav%20Clinic,%20I%20want%20to%20inquire%20about%20a%20treatment." target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-20 lg:bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 group p-2">
-    <img src="assets/images/whatsapp-logo.png" alt="WhatsApp Logo" class="w-full h-full object-contain rounded-full" />
+    <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp Logo" class="w-full h-full object-contain rounded-full" />
     <span class="absolute right-14 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-[#1C1813] text-amber-200 border border-amber-400/25 text-xs font-semibold rounded-lg shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-all duration-200 whitespace-nowrap">
       Chat with Clinic on WhatsApp
     </span>
@@ -1436,7 +1385,7 @@
         <div class="lg:col-span-2">
           <a href="#home" class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-xl bg-[#29221A] text-amber-400 border border-amber-400/20 flex items-center justify-center shadow-inner p-1">
-              <img src="assets/images/clinic-logo.png" alt="Yadav's Homeopathy &amp; Aesthetic Clinic Emblem" class="w-full h-full object-contain" />
+              <img src="assets/images/clinic-logo.png" width="512" height="512" alt="Yadav's Homeopathy &amp; Aesthetic Clinic Emblem" class="w-full h-full object-contain" />
             </div>
             <div>
               <span class="font-serif font-bold text-lg text-white block leading-none">YADAV'S</span>
@@ -1493,7 +1442,7 @@
           </p>
           <p class="text-xs text-stone-400 mb-1 font-sans">Phone: <a href="tel:+919137705305" class="text-amber-200 hover:text-amber-300 hover:underline">+91 91377 05305</a></p>
           <p class="text-xs text-stone-400 mb-1 font-sans">Phone: <a href="tel:+919892688901" class="text-amber-200 hover:text-amber-300 hover:underline">+91 98926 88901</a></p>
-          <p class="text-xs text-stone-400 font-sans">WhatsApp: <a href="https://wa.me/919892688901" target="_blank" class="text-amber-300 hover:text-amber-200 hover:underline inline-flex items-center gap-1.5"><img src="assets/images/whatsapp-logo.png" alt="WhatsApp" class="w-3.5 h-3.5 object-contain rounded-sm" /> +91 98926 88901</a></p>
+          <p class="text-xs text-stone-400 font-sans">          WhatsApp: <a href="https://wa.me/919892688901" target="_blank" class="text-amber-300 hover:text-amber-200 hover:underline inline-flex items-center gap-1.5"><img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp" class="w-3.5 h-3.5 object-contain rounded-sm" /> +91 98926 88901</a></p>
         </div>
 
       </div>
@@ -1522,7 +1471,7 @@
         <div class="flex items-center justify-between pb-4 mb-6 border-b border-amber-900/10">
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 border border-amber-200/80 flex items-center justify-center p-1 shadow-sm">
-              <img src="assets/images/clinic-logo.png" alt="Yadav's Clinic Emblem" class="w-full h-full object-contain" />
+              <img src="assets/images/clinic-logo.png" width="512" height="512" alt="Yadav's Clinic Emblem" class="w-full h-full object-contain" />
             </div>
             <div>
               <h3 id="drawerTitle" class="font-serif font-bold text-lg text-medical-navy">Book Consultation Slot</h3>
@@ -1551,13 +1500,32 @@
             <label for="drawerTreatment" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5">Treatment Specialty *</label>
             <select id="drawerTreatment" required class="w-full px-4 py-2.5 rounded-xl bg-[#FAF7F0] border border-stone-200 text-sm focus:outline-none focus:border-[#D4A017] focus:ring-2 focus:ring-[#D4A017]/20 focus:bg-white text-stone-900 font-sans">
               <option value="">Select concern...</option>
-              <option value="Hair Fall & Alopecia">Hair Fall & Scalp PRP</option>
-              <option value="Acne & Scars">Acne & Scar Clearance</option>
-              <option value="Skin Allergy">Skin Allergy & Itching</option>
-              <option value="Pigmentation & Melasma">Pigmentation & Brightening</option>
-              <option value="Anti-Aging & Glow">Anti-Aging & Facial Glow</option>
-              <option value="PCOS / Thyroid Balance">PCOS & Hormonal Balance</option>
-              <option value="General Homeopathy">General Homeopathy Consultation</option>
+              <optgroup label="Skin & Aesthetics">
+                <option value="Acne & Scar Treatment">Acne &amp; Scar Treatment</option>
+                <option value="Pigmentation & Melasma">Pigmentation, Melasma &amp; Hyperpigmentation</option>
+                <option value="Anti-Ageing Treatment">Anti-Ageing &amp; Skin Rejuvenation</option>
+                <option value="Hydrafacial">Hydrafacial</option>
+                <option value="Chemical Peel">Chemical Peel</option>
+                <option value="Mole / Wart / Tattoo Removal">Mole, Wart &amp; Tattoo Removal</option>
+              </optgroup>
+              <optgroup label="Laser Treatments">
+                <option value="Laser Hair Reduction">Laser Hair Reduction</option>
+                <option value="Laser Resurfacing / Toning">Laser Resurfacing &amp; Toning</option>
+                <option value="Q-Switch / Carbon Laser Peel">Q-Switch &amp; Carbon Laser Peel</option>
+              </optgroup>
+              <optgroup label="Hair & Trichology">
+                <option value="Hair Fall / Hair Thinning">Hair Fall &amp; Hair Thinning</option>
+                <option value="PRP Hair">PRP Hair</option>
+                <option value="Hair GFC / Mesotherapy">Hair GFC &amp; Mesotherapy</option>
+                <option value="Alopecia Areata">Alopecia Areata</option>
+              </optgroup>
+              <optgroup label="Wellness & Homeopathy">
+                <option value="Weight Loss & Lifestyle Care">Weight Loss &amp; Lifestyle Care</option>
+                <option value="PCOS / Thyroid Balance">PCOS, Thyroid &amp; Hormonal Balance</option>
+                <option value="Joint Pain / Arthritis">Joint Pain, Arthritis &amp; Back Pain</option>
+                <option value="Skin Disease / Allergy">Eczema, Psoriasis &amp; Allergies</option>
+                <option value="General Homeopathy">General Homeopathy Consultation</option>
+              </optgroup>
             </select>
           </div>
 
@@ -1589,7 +1557,7 @@
           </div>
 
           <button type="submit" class="btn-editorial-primary w-full py-3.5 text-xs uppercase tracking-wider justify-center mt-4 inline-flex items-center gap-2 shadow-md hover:shadow-lg">
-            <img src="assets/images/whatsapp-logo.png" alt="WhatsApp Logo" class="w-4 h-4 object-contain rounded-sm" />
+            <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp Logo" class="w-4 h-4 object-contain rounded-sm" />
             <span>Reserve via WhatsApp</span>
           </button>
         </form>
@@ -1667,7 +1635,7 @@
       </p>
       <div class="flex flex-col gap-3">
         <a id="confirmWhatsAppBtn" href="#" target="_blank" class="btn-editorial-primary justify-center py-3.5 inline-flex items-center gap-2 shadow-md hover:shadow-lg">
-          <img src="assets/images/whatsapp-logo.png" alt="WhatsApp Logo" class="w-4 h-4 object-contain rounded-sm" />
+          <img src="assets/images/whatsapp-logo.png" width="554" height="554" alt="WhatsApp Logo" class="w-4 h-4 object-contain rounded-sm" />
           <span>Send via WhatsApp</span>
         </a>
         <button id="closeSuccessModal" class="btn-editorial-outline justify-center text-xs py-2.5 uppercase tracking-wider">Close Window</button>
