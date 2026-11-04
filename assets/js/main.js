@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const quizRecommendations = {
     hair: {
       title: 'Hair And Scalp Care Plan',
-      text: 'Dr. Poonam and Dr. Rahul Yadav can suggest a personalized plan that may include homeopathy, scalp care and PRP based on your needs.'
+      text: 'Dr. Poonam Yadav can suggest a personalized plan that may include homeopathy, scalp care and PRP based on your needs.'
     },
     acne: {
       title: 'Acne And Scar Care Plan',
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (quizResultTitle) quizResultTitle.textContent = rec.title;
         if (quizResultText) quizResultText.textContent = rec.text;
 
-        const waText = encodeURIComponent(`Hello Dr. Rahul Yadav, I took the self-diagnostic quiz on your website for ${selectedConcern} (${selectedDuration} duration). I would like to book the recommended treatment plan.`);
+        const waText = encodeURIComponent(`Hello Dr. Poonam Yadav, I took the self-diagnostic quiz on your website for ${selectedConcern} (${selectedDuration} duration). I would like to book the recommended treatment plan.`);
         if (quizWhatsAppBtn) quizWhatsAppBtn.setAttribute('href', `https://wa.me/919892688901?text=${waText}`);
       });
     });
@@ -898,5 +898,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, { threshold: 0.2 });
     statsObserver.observe(statisticsSection);
+  }
+
+  const reviewsTrack = document.querySelector('.reviews-horizontal-track');
+  if (reviewsTrack) {
+    const avatarColors = ['#7C5CE5', '#E46B45', '#2CA58D', '#4D7CFE', '#D14D8B', '#6B7280'];
+    const googleMark = '<svg class="review-google-mark" aria-hidden="true" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3.01h3.87c2.27-2.09 3.56-5.17 3.56-8.66Z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.9l-3.87-3.01c-1.07.72-2.44 1.15-4.08 1.15-3.14 0-5.8-2.12-6.75-4.97H1.25v3.1A12 12 0 0 0 12 24Z"/><path fill="#FBBC05" d="M5.25 14.27A7.2 7.2 0 0 1 4.87 12c0-.79.14-1.56.38-2.27v-3.1H1.25A12 12 0 0 0 0 12c0 1.93.46 3.75 1.25 5.37l4-3.1Z"/><path fill="#EA4335" d="M12 4.76c1.77 0 3.36.61 4.61 1.81l3.45-3.45C17.95 1.11 15.24 0 12 0A12 12 0 0 0 1.25 6.63l4 3.1C6.2 6.88 8.86 4.76 12 4.76Z"/></svg>';
+    reviewsTrack.querySelectorAll('.google-review-card').forEach((card, index) => {
+      const nameElement = card.querySelector('footer b');
+      if (!nameElement) return;
+      const name = nameElement.textContent.trim();
+      const initials = name.split(/\s+/).map(part => part.charAt(0)).join('').slice(0, 2).toUpperCase();
+      const profile = document.createElement('div');
+      profile.className = 'review-profile';
+      profile.innerHTML = `<span class="review-avatar" style="background-color: ${avatarColors[index % avatarColors.length]}">${initials}</span><span class="review-profile-name">${name}</span>${googleMark}`;
+      card.prepend(profile);
+      card.querySelector('footer').remove();
+    });
+    reviewsTrack.innerHTML += reviewsTrack.innerHTML;
   }
 });

@@ -139,8 +139,7 @@
           {"@type": "MedicalProcedure", "name": "PRP Hair Treatment"}
         ],
         "employee": [
-          {"@type": "Person", "name": "Dr. Poonam Yadav", "jobTitle": "Homeopathy Doctor"},
-          {"@type": "Person", "name": "Dr. Rahul Yadav", "jobTitle": "Aesthetic Care Doctor"}
+          {"@type": "Person", "name": "Dr. Poonam Yadav", "jobTitle": "Homeopathy & Aesthetic Consultant"}
         ]
       },
       {
@@ -387,55 +386,41 @@
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-amber-900/10 fade-up">
         <div>
-          <span class="section-num">MEET YOUR DOCTORS</span>
+          <span class="section-num">MEET DR. POONAM YADAV</span>
           <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">
-            Meet Our Experienced Doctors
+            Thoughtful care, personally delivered
           </h2>
         </div>
       </div>
 
-      <!-- Doctor Profiles: large windowed editorial frames -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
-        <article class="doctor-window-card fade-right">
-          <div class="doctor-window-media">
-            <div class="doctor-window-placeholder" role="img" aria-label="Dr. Poonam Yadav profile placeholder">
-              <i data-lucide="user-round" class="w-16 h-16"></i>
-              <span>Dr. Poonam Yadav</span>
-            </div>
-            <span class="doctor-window-badge">Senior Specialist</span>
-            <span class="doctor-window-index">01</span>
+      <!-- Single doctor profile: large window portrait with separate editorial story -->
+      <div class="doctor-story-grid mb-16">
+        <div class="doctor-story-portrait fade-right">
+          <div class="doctor-window-media doctor-window-portrait">
+            <img src="assets/images/dr-poonam-yadav.png" width="768" height="1024" alt="Dr. Poonam Yadav at Yadav's Homeopathy and Aesthetic Clinic" decoding="async" />
+            <span class="doctor-window-badge">Founder &amp; Lead Consultant</span>
           </div>
-          <div class="doctor-window-content">
-            <span class="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full mb-3 border border-amber-200/80">B.H.M.S.</span>
-            <h3 class="text-3xl font-serif font-bold text-medical-navy">Dr. Poonam Yadav</h3>
-            <p class="text-xs text-[#C69214] font-bold tracking-wider uppercase mb-4 mt-1">Homeopathy &amp; Aesthetic Consultant &middot; Cosmetologist &middot; Trichologist &middot; Laser</p>
-            <p class="text-stone-600 text-sm leading-relaxed mb-5">She provides personalized homeopathy, skin and hair care, laser treatments, and PRP services.</p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-stone-700 pt-4 border-t border-amber-900/10">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500"></i>
-              <span>10,000+ Successful Patient Consultations</span>
-            </div>
+          <div class="doctor-portrait-caption">
+            <strong>Dr. Poonam Yadav</strong>
+            <span>B.H.M.S. &middot; Homeopathy &amp; Aesthetic Consultant</span>
           </div>
-        </article>
+        </div>
 
-        <article class="doctor-window-card fade-left">
-          <div class="doctor-window-media">
-            <div class="doctor-window-placeholder" role="img" aria-label="Dr. Rahul Yadav profile placeholder">
-              <i data-lucide="user-round" class="w-16 h-16"></i>
-              <span>Dr. Rahul Yadav</span>
-            </div>
-            <span class="doctor-window-badge">Senior Specialist</span>
-            <span class="doctor-window-index">02</span>
+        <article class="doctor-story-copy fade-left">
+          <span class="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full mb-5 border border-amber-200/80">A personal approach to better care</span>
+          <h3 class="text-4xl sm:text-5xl font-serif font-normal text-medical-navy leading-tight">Meet Dr. Poonam Yadav</h3>
+          <p class="doctor-story-lead">“Every patient deserves to feel heard, understood and confident about the care they choose.”</p>
+          <p class="text-stone-600 leading-relaxed">Dr. Poonam Yadav brings together the gentle, individualized principles of homeopathy with thoughtful skin, hair and aesthetic care. Her consultations begin with listening—understanding your concerns, your routine and the goals that matter to you.</p>
+          <p class="text-stone-600 leading-relaxed">From acne, pigmentation and hair fall to wellness support and aesthetic treatments, she creates clear, practical care plans designed around the whole person—not just a single symptom.</p>
+          <div class="doctor-story-values">
+            <div><i data-lucide="heart-handshake" class="w-5 h-5"></i><span>Compassionate consultations</span></div>
+            <div><i data-lucide="clipboard-check" class="w-5 h-5"></i><span>Personalized treatment plans</span></div>
+            <div><i data-lucide="sparkles" class="w-5 h-5"></i><span>Skin, hair &amp; wellness expertise</span></div>
           </div>
-          <div class="doctor-window-content">
-            <span class="inline-block px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full mb-3 border border-amber-200/80">B.A.M.S.</span>
-            <h3 class="text-3xl font-serif font-bold text-medical-navy">Dr. Rahul Yadav</h3>
-            <p class="text-xs text-[#C69214] font-bold tracking-wider uppercase mb-4 mt-1">Family Wellness Physician &middot; General &amp; Holistic Medicine</p>
-            <p class="text-stone-600 text-sm leading-relaxed mb-5">He supports family health and long-term conditions such as joint pain, diabetes, thyroid concerns, PCOS and kidney stones.</p>
-            <div class="flex items-center gap-2 text-xs font-semibold text-stone-700 pt-4 border-t border-amber-900/10">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500"></i>
-              <span>Specialist in Family Wellness &amp; Chronic Disease Management</span>
-            </div>
-          </div>
+          <button class="open-drawer-btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C69214] hover:text-[#9E6E09] pt-5 mt-2 border-t border-amber-900/10">
+            <span>Book a consultation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
         </article>
       </div>
 
@@ -1047,9 +1032,57 @@
   </section>
 
 
+  <!-- =========================================================================
+       12. SECTION 09 / GOOGLE REVIEWS
+       ========================================================================= -->
+  <section id="reviews" class="reviews-section grid-surface py-24 bg-[#FDFCF7] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-6 border-b border-amber-900/10 fade-up">
+        <div>
+          <span class="section-num">GOOGLE REVIEWS</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-normal text-medical-navy mt-2">Kind words from our patients</h2>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Yadav%27s%20Homeopathy%20%26%20Aesthetic%20Clinic%2C%20Mira%20Road" target="_blank" rel="noopener noreferrer" class="btn-editorial-outline text-xs uppercase tracking-wider py-2.5 px-5 inline-flex items-center justify-center gap-2">
+          <svg class="google-g-logo" aria-hidden="true" viewBox="0 0 24 24" role="img">
+            <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3.01h3.87c2.27-2.09 3.56-5.17 3.56-8.66Z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.9l-3.87-3.01c-1.07.72-2.44 1.15-4.08 1.15-3.14 0-5.8-2.12-6.75-4.97H1.25v3.1A12 12 0 0 0 12 24Z"/>
+            <path fill="#FBBC05" d="M5.25 14.27A7.2 7.2 0 0 1 4.87 12c0-.79.14-1.56.38-2.27v-3.1H1.25A12 12 0 0 0 0 12c0 1.93.46 3.75 1.25 5.37l4-3.1Z"/>
+            <path fill="#EA4335" d="M12 4.76c1.77 0 3.36.61 4.61 1.81l3.45-3.45C17.95 1.11 15.24 0 12 0A12 12 0 0 0 1.25 6.63l4 3.1C6.2 6.88 8.86 4.76 12 4.76Z"/>
+          </svg>
+          <span>See us on Google</span>
+        </a>
+      </div>
+
+      <div class="reviews-horizontal-viewport" aria-label="Patient reviews">
+        <div class="reviews-horizontal-track">
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Dr. Poonam Yadav is hands down the best in the business. She took the time to understand my hair issues and gave personal care that really sets her apart. She makes a stressful problem feel manageable.”</p><footer><b>Neeva Shah</b><span>4 reviews · 3 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I had a wonderful experience at Yadav's Clinic. The treatment was effective, and the staff made me feel comfortable throughout the process. The hygiene standards are top-notch, and the doctor provides honest, expert advice.”</p><footer><b>Riya More</b><span>2 reviews · a month ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Excellent Dr. Poonam Yadav is very polite, friendly and genuinely cares about her patients. I went for acne treatment and she explained everything patiently. Saw great results. Clean clinic and reasonable consultation.”</p><footer><b>Krishna Sarda</b><span>4 reviews · 2 photos · 3 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I came here for my hair related problems and I'm truly amazed with the results. The shampoo recommended for me and the medicines relieved my problem after taking them.”</p><footer><b>Sanyog Dubey</b><span>5 reviews · 3 weeks ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I visited Dr. Poonam for my hair treatment and had an excellent experience. She took the time to assess my condition properly, explained the treatment plan in detail, and customised everything according to my needs.”</p><footer><b>Hema Mangroliya</b><span>5 reviews · 2 photos · 11 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I had an excellent experience at Yadav’s Homeopathy &amp; Cosmetic Clinic, Mira Road. Dr. Poonam Yadav demonstrates outstanding professionalism and expertise. She listens attentively and ensures a personalized approach for every patient.”</p><footer><b>Praveen Gupta</b><span>Local Guide · 13 reviews · 4 photos</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I've been visiting Dr. Poonam for my acne treatment, and I must say the experience has been consistently good. Dr. Poonam is knowledgeable and makes you feel completely at ease throughout the process.”</p><footer><b>Sheetal Rai</b><span>3 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Poonam mam clinic is so nice and clean and she is very humble and she is doing really good job.”</p><footer><b>Shaikh Farhan</b><span>1 review · 2 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Excellent clinic! I'm so pleased with the results. Dr. Poonam not only accurately diagnosed my issue but also provided a clear and effective treatment plan. I've seen significant improvement.”</p><footer><b>Jessica Fernandes</b><span>6 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Clinic is so beautiful. Treatment result is 💯 percent. And Dr. Very nice and understanding.”</p><footer><b>Pratidnya Gadge</b><span>1 review · 3 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I came to doctor Poonam for face pigmentation. She suggested me some medicine for health issues also. No doubt the pigmentation got lighter plus my health issues also got solved. I feel so fresh now.”</p><footer><b>Geeta Durgawale</b><span>2 reviews · 8 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Dr. Poonam Yadav is an experienced professional in the hair and skin. I went to her for hair thinning and after a couple of sittings and medicine it started showing a positive result. My hairfall has completely stopped, hair has started growing.”</p><footer><b>Manish Pandey</b><span>4 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Had PRP treatment at this clinic and the results are really impressive. My skin has a noticeable glow and my acne scars have reduced significantly. Dr. Poonam explained everything in detail.”</p><footer><b>Pooja Patil</b><span>1 review · 9 months ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I had a very positive experience with Dr. Poonam. I visited for a skin condition and after a detailed consultation, the doctor prescribed a treatment plan tailored specifically to my condition. Thank you.”</p><footer><b>Sheetal Dhodi</b><span>9 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I had a very good experience at Yadav’s Homeopathy &amp; Cosmetic Clinic, Mira Road. Dr. Poonam Yadav is highly professional, caring, and gives genuine advice. She listens patiently and provides effective treatment.”</p><footer><b>Reema Gupta</b><span>2 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I have been visiting Dr Poonam for one year. She is a very honest best human being, and the knowledge regarding skin care as well as homoeopathic care is amazing. Fresh and glowing all thanks to Dr Poonam Yadav.”</p><footer><b>Watan Pal</b><span>2 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I was treated by Dr. Poonam for psoriasis and saw great improvement. The doctor explained everything clearly, gave the right treatment, and was very supportive. Highly recommended!”</p><footer><b>Hammad Mujawar</b><span>4 reviews · 4 photos · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I visited Yadav Homeopathic and Cosmetic Clinic for a white patch on my skin. Dr. Poonam diagnosed it very well, and the treatment is really helping as the patch is going away. I’m happy with the results.”</p><footer><b>Rishab Kesarwani</b><span>Local Guide · 4 reviews · 15 photos</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Great results and even better service! Dr. Poonam is extremely kind and professional. Highly recommend her clinic for all skin, hair, and aesthetic needs.”</p><footer><b>Priti Upadhyay</b><span>4 reviews · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“I would highly recommend this clinic and Dr. Poonam Yadav for her exceptional care and expertise. Her personalized approach and comprehensive care truly sets her apart. The clinic's clean and welcoming environment made my experience very positive.”</p><footer><b>Vatsal Jatia</b><span>9 reviews · 4 photos · a year ago</span></footer></article>
+          <article class="google-review-card"><div class="review-card-top"><strong>★★★★★</strong><span>Google review</span></div><p>“Dr. Yadav's clinic is a haven for hair and beauty enthusiasts! The team is professional, and Dr. Yadav's expertise is impressive. I saw remarkable results after my treatment, and the personalized care was truly exceptional.”</p><footer><b>Ratnesh Mishra</b><span>1 review · a year ago</span></footer></article>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================================
-       12. SECTION 09 / FAQ ACCORDION SECTION
+       13. SECTION 10 / FAQ ACCORDION SECTION
        ========================================================================= -->
   <section id="faq" class="grid-surface py-24 bg-[#FAF7F0] relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1393,7 +1426,7 @@
             </div>
           </a>
           <p class="text-sm text-stone-400 leading-relaxed mb-6 max-w-sm font-sans">
-            Mira Road's premier medical practice led by Dr. Poonam Yadav &amp; Dr. Rahul Yadav, providing natural holistic homeopathy treatments alongside evidence-based cosmetic aesthetic procedures.
+            Mira Road's premier medical practice led by Dr. Poonam Yadav, providing natural holistic homeopathy treatments alongside evidence-based cosmetic aesthetic procedures.
           </p>
           <div class="flex items-center gap-3 text-stone-400">
             <a href="https://www.instagram.com/yadavs_clinic/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" class="w-8 h-8 rounded-full bg-[#29221A] text-amber-300/80 border border-amber-400/10 flex items-center justify-center hover:bg-[#D4A017] hover:text-[#1C1813] hover:border-[#D4A017] transition-all" title="Instagram">
@@ -1475,7 +1508,7 @@
             </div>
             <div>
               <h3 id="drawerTitle" class="font-serif font-bold text-lg text-medical-navy">Book Consultation Slot</h3>
-              <p class="text-[11px] text-stone-500 font-sans">Dr. Poonam &amp; Dr. Rahul Yadav Clinic</p>
+              <p class="text-[11px] text-stone-500 font-sans">Dr. Poonam Yadav Clinic</p>
             </div>
           </div>
           <button id="closeDrawerBtn" aria-label="Close booking drawer" class="p-2 text-stone-400 hover:text-medical-navy rounded-full hover:bg-amber-50 transition-colors">
